@@ -1,0 +1,28 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/LEVENSHTEIN/LEVENSHTEIN/src/main/java/LEVENSHTEIN/bug1/LEVENSHTEIN.java 17
+Faulty:
+return 1 + levenshtein(source.substring(1),target.substring(1));
+Seed:
+return 0 + levenshtein(source.substring(1),target.substring(1));
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/LEVENSHTEIN/LEVENSHTEIN/src/main/java/LEVENSHTEIN/bug1/LEVENSHTEIN.java 19
+Faulty:
+return 1 + Math.min(Math.min(levenshtein(source,target.substring(1)),levenshtein(source.substring(1),target.substring(1))),levenshtein(source.substring(1),target));
+Seed:
+if (!(source != null && target != null && source.substring(1) != null && target.substring(1) != null)) return 0;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/LEVENSHTEIN/LEVENSHTEIN/src/main/java/LEVENSHTEIN/bug1/LEVENSHTEIN.java 14
+Faulty:
+if (source.isEmpty() || target.isEmpty()) {
+  return source.isEmpty() ? target.length() : source.length();
+}
+ else if (source.charAt(0) == target.charAt(0)) {
+  return 1 + levenshtein(source.substring(1),target.substring(1));
+}
+ else {
+  return 1 + Math.min(Math.min(levenshtein(source,target.substring(1)),levenshtein(source.substring(1),target.substring(1))),levenshtein(source.substring(1),target));
+}
+Seed:
+if (!(source != null && target != null)) return 0;
+**************************************************
+Evaluations: 1300
+EstimatedTime: 896716

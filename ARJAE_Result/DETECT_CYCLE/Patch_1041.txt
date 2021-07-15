@@ -1,0 +1,14 @@
+1 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/DETECT_CYCLE/DETECT_CYCLE/src/main/java/DETECT_CYCLE/bug1/DETECT_CYCLE.java 22
+Faulty:
+tortoise=tortoise.getSuccessor();
+Seed:
+NULL
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/DETECT_CYCLE/DETECT_CYCLE/src/main/java/DETECT_CYCLE/bug1/DETECT_CYCLE.java 19
+Faulty:
+if (hare.getSuccessor() == null) return false;
+Seed:
+if (!(hare != null)) return false;
+**************************************************
+Evaluations: 1080
+EstimatedTime: 585257

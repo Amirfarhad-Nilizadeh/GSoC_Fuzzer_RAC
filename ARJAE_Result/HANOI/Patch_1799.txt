@@ -1,0 +1,20 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 21
+Faulty:
+crap_set.add(2);
+Seed:
+if (!(crap_set != null)) return null;
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 27
+Faulty:
+steps.add(new Pair<Integer,Integer>(start,helper));
+Seed:
+steps.add(new Pair<Integer,Integer>(start,end));
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 28
+Faulty:
+steps.addAll(hanoi(height - 1,helper,end));
+Seed:
+crap_set.remove(start);
+**************************************************
+Evaluations: 1816
+EstimatedTime: 317304

@@ -1,0 +1,41 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 25
+Faulty:
+i++;
+Seed:
+for (Integer count : arr) {
+  sorted_arr.addAll(Collections.nCopies(count,i));
+  i++;
+}
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 28
+Faulty:
+return sorted_arr;
+Seed:
+i++;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 18
+Faulty:
+counts.set(x,counts.get(x) + 1);
+Seed:
+if (!(counts != null)) continue;
+**************************************************
+4 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 23
+Faulty:
+for (Integer count : arr) {
+  sorted_arr.addAll(Collections.nCopies(count,i));
+  i++;
+}
+Seed:
+for (Integer count : counts) {
+  sorted_arr.addAll(Collections.nCopies(count,i));
+  i++;
+}
+**************************************************
+5 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 24
+Faulty:
+sorted_arr.addAll(Collections.nCopies(count,i));
+Seed:
+NULL
+**************************************************
+Evaluations: 1701
+EstimatedTime: 287283

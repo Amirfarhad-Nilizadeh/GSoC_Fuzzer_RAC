@@ -1,0 +1,31 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BREADTH_FIRST_SEARCH/BREADTH_FIRST_SEARCH/src/main/java/BREADTH_FIRST_SEARCH/bug1/BREADTH_FIRST_SEARCH.java 31
+Faulty:
+for (Node successor_node : node.getSuccessors()) {
+  if (!nodesvisited.contains(successor_node)) {
+    queue.addFirst(successor_node);
+    nodesvisited.add(successor_node);
+  }
+}
+Seed:
+if (!(node != null)) return false;
+**************************************************
+2 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BREADTH_FIRST_SEARCH/BREADTH_FIRST_SEARCH/src/main/java/BREADTH_FIRST_SEARCH/bug1/BREADTH_FIRST_SEARCH.java 23
+Faulty:
+nodesvisited.add(startnode);
+Seed:
+NULL
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BREADTH_FIRST_SEARCH/BREADTH_FIRST_SEARCH/src/main/java/BREADTH_FIRST_SEARCH/bug1/BREADTH_FIRST_SEARCH.java 26
+Faulty:
+Node node=queue.removeFirst();
+Seed:
+Node node=queue.pollLast();
+**************************************************
+4 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BREADTH_FIRST_SEARCH/BREADTH_FIRST_SEARCH/src/main/java/BREADTH_FIRST_SEARCH/bug1/BREADTH_FIRST_SEARCH.java 20
+Faulty:
+Deque<Node> queue=new ArrayDeque<>();
+Seed:
+nodesvisited.add(startnode);
+**************************************************
+Evaluations: 1190
+EstimatedTime: 637374

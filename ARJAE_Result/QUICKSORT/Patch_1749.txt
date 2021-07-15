@@ -1,0 +1,24 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 21
+Faulty:
+ArrayList<Integer> greater=new ArrayList<Integer>();
+Seed:
+lesser=quicksort(lesser);
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 27
+Faulty:
+greater.add(x);
+Seed:
+if (!(greater != null)) return null;
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 26
+Faulty:
+if (x > pivot) {
+  greater.add(x);
+}
+Seed:
+if (x >= pivot) {
+  greater.add(x);
+}
+**************************************************
+Evaluations: 1627
+EstimatedTime: 1498570

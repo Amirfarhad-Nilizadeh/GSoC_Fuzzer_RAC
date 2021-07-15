@@ -1,0 +1,34 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 26
+Faulty:
+if (x > pivot) {
+  greater.add(x);
+}
+Seed:
+if (x > pivot || !(arr.isEmpty())) {
+  greater.add(x);
+}
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 16
+Faulty:
+return new ArrayList<Integer>();
+Seed:
+if (arr.isEmpty()) {
+  return new ArrayList<Integer>();
+}
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 31
+Faulty:
+middle.add(pivot);
+Seed:
+lesser=quicksort(lesser);
+**************************************************
+4 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 32
+Faulty:
+lesser=quicksort(lesser);
+Seed:
+if (arr.isEmpty()) {
+  return new ArrayList<Integer>();
+}
+**************************************************
+Evaluations: 1495
+EstimatedTime: 1418255

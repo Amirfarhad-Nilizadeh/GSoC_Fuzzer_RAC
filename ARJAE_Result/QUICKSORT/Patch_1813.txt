@@ -1,0 +1,24 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 26
+Faulty:
+if (x > pivot) {
+  greater.add(x);
+}
+Seed:
+if (x > pivot || !(lesser.add(x))) {
+  greater.add(x);
+}
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 19
+Faulty:
+Integer pivot=arr.get(0);
+Seed:
+if (!(0 < arr.size())) return null;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 34
+Faulty:
+middle.addAll(greater);
+Seed:
+if (!(middle != null)) return null;
+**************************************************
+Evaluations: 1685
+EstimatedTime: 1545176

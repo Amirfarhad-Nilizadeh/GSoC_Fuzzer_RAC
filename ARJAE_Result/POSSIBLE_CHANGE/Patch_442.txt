@@ -1,0 +1,8 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 21
+Faulty:
+int first=coins[0];
+Seed:
+if (!(0 < coins.length)) return 0;
+**************************************************
+Evaluations: 477
+EstimatedTime: 80152

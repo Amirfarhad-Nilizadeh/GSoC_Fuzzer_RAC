@@ -1,0 +1,25 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 23
+Faulty:
+for (Integer x : arr.subList(1,arr.size())) {
+  if (x < pivot) {
+    lesser.add(x);
+  }
+ else   if (x > pivot) {
+    greater.add(x);
+  }
+}
+Seed:
+if (!(arr != null)) throw new java.lang.IllegalArgumentException();
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 26
+Faulty:
+if (x > pivot) {
+  greater.add(x);
+}
+Seed:
+if (x >= pivot) {
+  greater.add(x);
+}
+**************************************************
+Evaluations: 1176
+EstimatedTime: 1152867

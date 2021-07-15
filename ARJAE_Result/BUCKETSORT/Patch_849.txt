@@ -1,0 +1,32 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 21
+Faulty:
+ArrayList<Integer> sorted_arr=new ArrayList<Integer>(100);
+Seed:
+ArrayList<Integer> sorted_arr=new ArrayList<Integer>(0);
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 28
+Faulty:
+return sorted_arr;
+Seed:
+i++;
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 23
+Faulty:
+for (Integer count : arr) {
+  sorted_arr.addAll(Collections.nCopies(count,i));
+  i++;
+}
+Seed:
+for (Integer count : counts) {
+  sorted_arr.addAll(Collections.nCopies(count,i));
+  i++;
+}
+**************************************************
+4 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/BUCKETSORT/BUCKETSORT/src/main/java/BUCKETSORT/bug1/BUCKETSORT.java 24
+Faulty:
+sorted_arr.addAll(Collections.nCopies(count,i));
+Seed:
+NULL
+**************************************************
+Evaluations: 914
+EstimatedTime: 152349

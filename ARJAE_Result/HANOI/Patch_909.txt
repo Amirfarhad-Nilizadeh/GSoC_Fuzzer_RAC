@@ -1,0 +1,28 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 20
+Faulty:
+crap_set.add(1);
+Seed:
+{
+  crap_set=new PriorityQueue<Integer>();
+}
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 27
+Faulty:
+steps.add(new Pair<Integer,Integer>(start,helper));
+Seed:
+steps.add(new Pair<Integer,Integer>(start,end));
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 28
+Faulty:
+steps.addAll(hanoi(height - 1,helper,end));
+Seed:
+if (steps != null) steps.addAll(hanoi(height - 1,helper,end));
+**************************************************
+4 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 16
+Faulty:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>();
+Seed:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>(end);
+**************************************************
+Evaluations: 953
+EstimatedTime: 170851

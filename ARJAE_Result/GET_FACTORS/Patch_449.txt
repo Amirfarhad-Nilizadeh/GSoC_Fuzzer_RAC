@@ -1,0 +1,18 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 16
+Faulty:
+if (n == 1) {
+  return new ArrayList<Integer>();
+}
+Seed:
+if (n < 1) {
+  return new ArrayList<Integer>();
+}
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 19
+Faulty:
+int max=(int)(Math.sqrt(n) + 1.0);
+Seed:
+int max=(int)(Math.toDegrees(n) + 1.0);
+**************************************************
+Evaluations: 468
+EstimatedTime: 92043

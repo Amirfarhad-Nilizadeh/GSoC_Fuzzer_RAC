@@ -1,0 +1,14 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 21
+Faulty:
+int first=coins[0];
+Seed:
+if (!(0 < coins.length)) return 0;
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 23
+Faulty:
+return possible_change(coins,total - first) + possible_change(rest,total);
+Seed:
+if (!(coins != null && rest != null)) throw new java.lang.IllegalArgumentException();
+**************************************************
+Evaluations: 238
+EstimatedTime: 40636

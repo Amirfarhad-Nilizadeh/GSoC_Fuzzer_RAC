@@ -1,0 +1,14 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 19
+Faulty:
+int max=(int)(Math.sqrt(n) + 1.0);
+Seed:
+int max=(int)(Math.toDegrees(n) + 1.0);
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 24
+Faulty:
+prepend.addAll(get_factors(n / i));
+Seed:
+if (!(i != 0)) return null;
+**************************************************
+Evaluations: 716
+EstimatedTime: 152998

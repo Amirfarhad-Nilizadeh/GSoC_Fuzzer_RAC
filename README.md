@@ -8,4 +8,8 @@ Project Description: Security and Semantic bugs exist in software systems, and d
 
 Requirements:
 
-Java 8 in a Linux system. Kelinci, Badger, OpenJML and SPF all work with Java 8.
+Java 8 in a Linux system. (Kelinci, Badger, OpenJML, and SPF all work with Java 8.)
+
+For the first evaluation, OpenJML is combined with Kelinci to check the first evaluation, and you can find 14 examples with results. Also, the results of ARJAE (an APR tool) for repairing buggy programs of QuixBugs are in the ARJAE directory.
+
+The next step is combining HyDiff (that has SPF inside) with OpenJML.

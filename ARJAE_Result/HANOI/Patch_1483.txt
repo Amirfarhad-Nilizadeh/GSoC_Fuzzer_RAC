@@ -1,0 +1,20 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 27
+Faulty:
+steps.add(new Pair<Integer,Integer>(start,helper));
+Seed:
+steps.add(new Pair<Integer,Integer>(start,end));
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 62
+Faulty:
+return "(" + String.valueOf(first) + ", "+ String.valueOf(second)+ ")";
+Seed:
+this.first=first;
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 16
+Faulty:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>();
+Seed:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>(end);
+**************************************************
+Evaluations: 1499
+EstimatedTime: 264532

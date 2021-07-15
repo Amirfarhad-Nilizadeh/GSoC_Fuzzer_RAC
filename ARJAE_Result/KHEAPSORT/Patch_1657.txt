@@ -1,0 +1,34 @@
+1 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/KHEAPSORT/KHEAPSORT/src/main/java/KHEAPSORT/bug1/KHEAPSORT.java 30
+Faulty:
+output.add(popped);
+Seed:
+NULL
+**************************************************
+2 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/KHEAPSORT/KHEAPSORT/src/main/java/KHEAPSORT/bug1/KHEAPSORT.java 22
+Faulty:
+for (Integer v : arr.subList(0,k)) {
+  heap.add(v);
+}
+Seed:
+NULL
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/KHEAPSORT/KHEAPSORT/src/main/java/KHEAPSORT/bug1/KHEAPSORT.java 34
+Faulty:
+output.add(heap.poll());
+Seed:
+if (!(heap != null && output != null)) throw new java.lang.IllegalArgumentException();
+**************************************************
+4 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/KHEAPSORT/KHEAPSORT/src/main/java/KHEAPSORT/bug1/KHEAPSORT.java 23
+Faulty:
+heap.add(v);
+Seed:
+if (heap != null) heap.add(v);
+**************************************************
+5 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/KHEAPSORT/KHEAPSORT/src/main/java/KHEAPSORT/bug1/KHEAPSORT.java 29
+Faulty:
+Integer popped=heap.poll();
+Seed:
+Integer popped=heap.size();
+**************************************************
+Evaluations: 1779
+EstimatedTime: 1151929

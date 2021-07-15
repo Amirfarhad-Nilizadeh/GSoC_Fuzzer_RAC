@@ -1,0 +1,18 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 21
+Faulty:
+ArrayList<Integer> greater=new ArrayList<Integer>();
+Seed:
+ArrayList<Integer> greater=new ArrayList<Integer>(lesser);
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/QUICKSORT/QUICKSORT/src/main/java/QUICKSORT/bug1/QUICKSORT.java 26
+Faulty:
+if (x > pivot) {
+  greater.add(x);
+}
+Seed:
+if (x >= pivot) {
+  greater.add(x);
+}
+**************************************************
+Evaluations: 1307
+EstimatedTime: 1242202

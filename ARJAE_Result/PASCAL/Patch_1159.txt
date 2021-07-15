@@ -1,0 +1,50 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/PASCAL/PASCAL/src/main/java/PASCAL/bug1/PASCAL.java 27
+Faulty:
+upleft=0;
+Seed:
+n=0;
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/PASCAL/PASCAL/src/main/java/PASCAL/bug1/PASCAL.java 22
+Faulty:
+for (int c=0; c < r; c++) {
+  int upleft, upright;
+  if (c > 0) {
+    upleft=rows.get(r - 1).get(c - 1);
+  }
+ else {
+    upleft=0;
+  }
+  if (c < r) {
+    upright=rows.get(r - 1).get(c);
+  }
+ else {
+    upright=0;
+  }
+  row.add(upleft + upright);
+}
+Seed:
+for (int c=0; c <= r; c++) {
+  int upleft, upright;
+  if (c > 0) {
+    upleft=rows.get(r - 1).get(c - 1);
+  }
+ else {
+    upleft=0;
+  }
+  if (c < r) {
+    upright=rows.get(r - 1).get(c);
+  }
+ else {
+    upright=0;
+  }
+  row.add(upleft + upright);
+}
+**************************************************
+3 Delete /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/PASCAL/PASCAL/src/main/java/PASCAL/bug1/PASCAL.java 34
+Faulty:
+row.add(upleft + upright);
+Seed:
+NULL
+**************************************************
+Evaluations: 981
+EstimatedTime: 150633

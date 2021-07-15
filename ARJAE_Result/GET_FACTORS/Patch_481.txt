@@ -1,0 +1,23 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 20
+Faulty:
+for (int i=2; i < max; i++) {
+  if (n % i == 0) {
+    ArrayList<Integer> prepend=new ArrayList<Integer>(0);
+    prepend.add(i);
+    prepend.addAll(get_factors(n / i));
+    return prepend;
+  }
+}
+Seed:
+if (n == 1) {
+  return new ArrayList<Integer>();
+}
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/GET_FACTORS/GET_FACTORS/src/main/java/GET_FACTORS/bug1/GET_FACTORS.java 19
+Faulty:
+int max=(int)(Math.sqrt(n) + 1.0);
+Seed:
+int max=(int)(Math.floor(n) + 1.0);
+**************************************************
+Evaluations: 495
+EstimatedTime: 97152

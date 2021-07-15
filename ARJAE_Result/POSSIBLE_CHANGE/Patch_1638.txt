@@ -1,0 +1,24 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 21
+Faulty:
+int first=coins[0];
+Seed:
+if (!(0 < coins.length)) return 0;
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 22
+Faulty:
+int[] rest=Arrays.copyOfRange(coins,1,coins.length);
+Seed:
+if (!(coins != null)) return 0;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/POSSIBLE_CHANGE/POSSIBLE_CHANGE/src/main/java/POSSIBLE_CHANGE/bug1/POSSIBLE_CHANGE.java 17
+Faulty:
+if (total < 0) {
+  return 0;
+}
+Seed:
+if (total < 0) {
+  return 0;
+}
+**************************************************
+Evaluations: 1674
+EstimatedTime: 269266

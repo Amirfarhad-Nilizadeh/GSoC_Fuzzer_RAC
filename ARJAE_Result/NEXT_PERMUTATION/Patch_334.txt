@@ -1,0 +1,80 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/NEXT_PERMUTATION/NEXT_PERMUTATION/src/main/java/NEXT_PERMUTATION/bug1/NEXT_PERMUTATION.java 27
+Faulty:
+for (int k=next_perm.size() - 1; k != i; k--) {
+  reversed.add(next_perm.get(k));
+}
+Seed:
+next_perm.set(i,temp_j);
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/NEXT_PERMUTATION/NEXT_PERMUTATION/src/main/java/NEXT_PERMUTATION/bug1/NEXT_PERMUTATION.java 17
+Faulty:
+if (perm.get(i) < perm.get(i + 1)) {
+  for (int j=perm.size() - 1; j != i; j--) {
+    if (perm.get(j) < perm.get(i)) {
+      ArrayList<Integer> next_perm=perm;
+      int temp_j=perm.get(j);
+      int temp_i=perm.get(i);
+      next_perm.set(i,temp_j);
+      next_perm.set(j,temp_i);
+      ArrayList<Integer> reversed=new ArrayList<Integer>(100);
+      for (int k=next_perm.size() - 1; k != i; k--) {
+        reversed.add(next_perm.get(k));
+      }
+      int q=i + 1;
+      for (      Integer replace : reversed) {
+        next_perm.set(q,replace);
+        q++;
+      }
+      return next_perm;
+    }
+  }
+}
+Seed:
+if (!(i < perm.size() && i + 1 < perm.size())) return null;
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/NEXT_PERMUTATION/NEXT_PERMUTATION/src/main/java/NEXT_PERMUTATION/bug1/NEXT_PERMUTATION.java 19
+Faulty:
+if (perm.get(j) < perm.get(i)) {
+  ArrayList<Integer> next_perm=perm;
+  int temp_j=perm.get(j);
+  int temp_i=perm.get(i);
+  next_perm.set(i,temp_j);
+  next_perm.set(j,temp_i);
+  ArrayList<Integer> reversed=new ArrayList<Integer>(100);
+  for (int k=next_perm.size() - 1; k != i; k--) {
+    reversed.add(next_perm.get(k));
+  }
+  int q=i + 1;
+  for (  Integer replace : reversed) {
+    next_perm.set(q,replace);
+    q++;
+  }
+  return next_perm;
+}
+Seed:
+if (perm.get(j) > perm.get(i)) {
+  ArrayList<Integer> next_perm=perm;
+  int temp_j=perm.get(j);
+  int temp_i=perm.get(i);
+  next_perm.set(i,temp_j);
+  next_perm.set(j,temp_i);
+  ArrayList<Integer> reversed=new ArrayList<Integer>(100);
+  for (int k=next_perm.size() - 1; k != i; k--) {
+    reversed.add(next_perm.get(k));
+  }
+  int q=i + 1;
+  for (  Integer replace : reversed) {
+    next_perm.set(q,replace);
+    q++;
+  }
+  return next_perm;
+}
+**************************************************
+4 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/NEXT_PERMUTATION/NEXT_PERMUTATION/src/main/java/NEXT_PERMUTATION/bug1/NEXT_PERMUTATION.java 22
+Faulty:
+int temp_i=perm.get(i);
+Seed:
+float temp_i=perm.get(i);
+**************************************************
+Evaluations: 418
+EstimatedTime: 57545

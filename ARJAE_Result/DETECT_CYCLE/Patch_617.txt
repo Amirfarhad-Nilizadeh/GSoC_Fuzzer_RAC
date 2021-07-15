@@ -1,0 +1,20 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/DETECT_CYCLE/DETECT_CYCLE/src/main/java/DETECT_CYCLE/bug1/Node.java 58
+Faulty:
+return successor;
+Seed:
+this.successor=successor;
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/DETECT_CYCLE/DETECT_CYCLE/src/main/java/DETECT_CYCLE/bug1/DETECT_CYCLE.java 23
+Faulty:
+hare=hare.getSuccessor().getSuccessor();
+Seed:
+if (hare.getSuccessor() == null) return false;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/DETECT_CYCLE/DETECT_CYCLE/src/main/java/DETECT_CYCLE/bug1/DETECT_CYCLE.java 19
+Faulty:
+if (hare.getSuccessor() == null) return false;
+Seed:
+if (!(hare != null)) return false;
+**************************************************
+Evaluations: 657
+EstimatedTime: 308593

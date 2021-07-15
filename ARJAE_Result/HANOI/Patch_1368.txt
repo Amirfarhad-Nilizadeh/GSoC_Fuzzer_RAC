@@ -1,0 +1,20 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 19
+Faulty:
+PriorityQueue<Integer> crap_set=new PriorityQueue<Integer>();
+Seed:
+PriorityQueue<Integer> crap_set=new PriorityQueue<Integer>(height);
+**************************************************
+2 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 27
+Faulty:
+steps.add(new Pair<Integer,Integer>(start,helper));
+Seed:
+steps.add(new Pair<Integer,Integer>(start,end));
+**************************************************
+3 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/QuixBugs/ArjaeFramework/ARJAE/HANOI/HANOI/src/main/java/HANOI/bug1/HANOI.java 16
+Faulty:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>();
+Seed:
+ArrayList<Pair<Integer,Integer>> steps=new ArrayList<Pair<Integer,Integer>>(end);
+**************************************************
+Evaluations: 1390
+EstimatedTime: 246598
