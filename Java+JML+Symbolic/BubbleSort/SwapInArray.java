@@ -1,5 +1,5 @@
    public class SwapInArray {
-        /*@ requires 0 <= x && x < array.length && 0 <= y && y < array.length; 
+      /*@ requires 0 <= x && x < array.length && 0 <= y && y < array.length; 
       @ assignable array[x], array[y]; 
       @ ensures \old(array[x]) == array[y] && \old(array[y]) == array[x];
       @ ensures array.length == \old(array.length); @*/
