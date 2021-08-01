@@ -1,0 +1,12 @@
+classpath = /home/amirfarhad/eclipse-workspace/TestProjects/bin
+
+target = OddEven
+#symbolic.method = simple.Branches.branch(sym#sym)
+#symbolic.min_int=1
+#symbolic.max_int=10000
+symbolic.dp=z3
+search.multiple_errors=true
+#symbolic.debug=true
+#listener = gov.nasa.jpf.symbc.SymbolicListener
+
+vm.storage.class=nil

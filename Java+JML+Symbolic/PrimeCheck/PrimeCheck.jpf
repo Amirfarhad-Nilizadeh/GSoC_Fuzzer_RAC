@@ -1,0 +1,10 @@
+classpath = /home/amirfarhad/eclipse-workspace/TestProjects/bin
+
+target = PrimeCheck
+#symbolic.method = simple.Branches.branch(sym#sym)
+symbolic.min_int=1
+#symbolic.maxint=10000
+symbolic.dp=z3
+search.miltiple_errors=true
+
+vm.storage.class=nil

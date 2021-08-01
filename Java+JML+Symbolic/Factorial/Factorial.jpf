@@ -1,0 +1,10 @@
+classpath = /home/amirfarhad/eclipse-workspace/TestProjects/bin
+
+target = Factorial
+#symbolic.method = simple.Branches.branch(sym#sym)
+symbolic.minint=0
+symbolic.maxint=20
+symbolic.dp=z3
+search.miltiple_errors=true
+
+vm.storage.class=nil

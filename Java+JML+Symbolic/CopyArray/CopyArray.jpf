@@ -1,0 +1,10 @@
+classpath = /home/amirfarhad/eclipse-workspace/TestProjects/bin
+
+target = CopyArray
+#symbolic.method = simple.Branches.branch(sym#sym)
+#symbolic.min_int=0
+#symbolic.max_int=20
+symbolic.dp=z3
+search.multiple_errors=true
+
+vm.storage.class=nil

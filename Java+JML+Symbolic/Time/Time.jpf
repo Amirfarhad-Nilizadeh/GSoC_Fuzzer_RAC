@@ -1,0 +1,9 @@
+classpath = /home/amirfarhad/eclipse-workspace/TestProjects/bin
+
+target = Time
+#symbolic.method = simple.Branches.branch(sym#sym)
+#symbolic.min_int=1
+#symbolic.max_int=10
+symbolic.dp=z3
+search.multiple_errors=true
+vm.storage.class=nil
