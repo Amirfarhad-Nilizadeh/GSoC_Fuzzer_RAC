@@ -27,8 +27,8 @@ public class AddLoop {
     public static void main(String[] args) {
         int x = 100; 
         int y = -12;
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
         AddLoop(x,y);
         Debug.printPC("PC: ");
     }

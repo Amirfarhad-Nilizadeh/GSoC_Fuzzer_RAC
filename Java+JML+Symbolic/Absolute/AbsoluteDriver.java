@@ -36,9 +36,9 @@ public class AbsoluteDriver {
         int x = 100; 
         short y = -12;
         long z = 40;
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
-        Debug.addSymbolicInt((int) z, "sym_z");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = (short) Debug.addSymbolicInt(y, "sym_y");
+        z = Debug.addSymbolicInt((int) z, "sym_z");
         AbsoluteDriver abs = new AbsoluteDriver(y, x, z);
         abs.driver();
         Debug.printPC("PC: ");
