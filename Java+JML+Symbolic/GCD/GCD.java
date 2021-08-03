@@ -75,8 +75,8 @@ public class GCD {
         int x = 3; 
         int y = 15;
         GCD obj = new GCD();
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
         obj.gcd(x, y);
         Debug.printPC("PC: ");
     }

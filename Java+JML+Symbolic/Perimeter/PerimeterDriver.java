@@ -60,13 +60,13 @@ public class PerimeterDriver {
          short shortNum = 5;
          long longNum = 5;
          PerimeterDriver obj = new PerimeterDriver();
-         Debug.addSymbolicInt(sel, "sym_sel");
-         Debug.addSymbolicInt(w, "sym_w");
-         Debug.addSymbolicInt(x, "sym_x");
-         Debug.addSymbolicInt(y, "sym_y");
-         Debug.addSymbolicInt(z, "sym_z");
-         Debug.addSymbolicInt(shortNum, "sym_short");
-         Debug.addSymbolicInt((int) longNum, "sym_long");
+         sel = Debug.addSymbolicInt(sel, "sym_sel");
+         w = Debug.addSymbolicInt(w, "sym_w");
+         x = Debug.addSymbolicInt(x, "sym_x");
+         y = Debug.addSymbolicInt(y, "sym_y");
+         z = Debug.addSymbolicInt(z, "sym_z");
+         shortNum = (short)Debug.addSymbolicInt(shortNum, "sym_short");
+         longNum = Debug.addSymbolicInt((int) longNum, "sym_long");
          obj.driver(sel, w, x, y, z, shortNum, longNum);
          Debug.printPC("PC: ");
      }

@@ -305,15 +305,15 @@ public class Time {
         int sel = 100; 
         int x = 0, y = 0;
         int s1 = 0, s2 = 12, m1 = 0, m2 = 12, h1 = 0, h2 = 12;
-        Debug.addSymbolicInt(sel, "sym_sel");
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
-        Debug.addSymbolicInt(h1, "sym_h1");
-        Debug.addSymbolicInt(h2, "sym_h2");
-        Debug.addSymbolicInt(m1, "sym_m1");
-        Debug.addSymbolicInt(m2, "sym_m2");
-        Debug.addSymbolicInt(s1, "sym_s1");
-        Debug.addSymbolicInt(s2, "sym_s2");
+        sel = Debug.addSymbolicInt(sel, "sym_sel");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
+        h1 = Debug.addSymbolicInt(h1, "sym_h1");
+        h2 = Debug.addSymbolicInt(h2, "sym_h2");
+        m1 = Debug.addSymbolicInt(m1, "sym_m1");
+        m2 = Debug.addSymbolicInt(m2, "sym_m2");
+        s1 = Debug.addSymbolicInt(s1, "sym_s1");
+        s2 = Debug.addSymbolicInt(s2, "sym_s2");
         Time time = new Time();
         if (x == 0 && y == 0) {
             Time timeA = new Time();

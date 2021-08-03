@@ -55,8 +55,8 @@ public class Fibonacci {
     public static void main(String[] args) {
         int x = 90; 
         int sel = 1;
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(sel, "sym_sel");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        sel = Debug.addSymbolicInt(sel, "sym_sel");
         if (sel == 1) {
             Fibonacci Fib = new Fibonacci(x);
             Fib.fibCompute();

@@ -543,11 +543,11 @@ public class BankAccount
         int option = 9;
         int amount = 1000, currentBalance = 30000, previousTransaction = 1200;
         int sel = 1;
-        Debug.addSymbolicInt(option, "sym_option");
-        Debug.addSymbolicInt(amount, "sym_amount");
-        Debug.addSymbolicInt(currentBalance, "sym_currentBalance");
-        Debug.addSymbolicInt(previousTransaction, "sym_previousTransaction");
-        Debug.addSymbolicInt(sel, "sym_sel");
+        option = Debug.addSymbolicInt(option, "sym_option");
+        amount = Debug.addSymbolicInt(amount, "sym_amount");
+        currentBalance = Debug.addSymbolicInt(currentBalance, "sym_currentBalance");
+        previousTransaction = Debug.addSymbolicInt(previousTransaction, "sym_previousTransaction");
+        sel = Debug.addSymbolicInt(sel, "sym_sel");
         if (sel == 0) {
             BankAccount obj = new BankAccount();
             obj.menu(option, amount);

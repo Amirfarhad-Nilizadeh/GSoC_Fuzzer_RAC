@@ -16,7 +16,7 @@ public class OddEven {
      public static void main(String[] args) {
          int x = 100; 
          OddEven num = new OddEven();
-         Debug.addSymbolicInt(x, "sym_x");
+         x = Debug.addSymbolicInt(x, "sym_x");
          num.isEven(x);
          num.isOdd(x);
          Debug.printPC("PC: ");

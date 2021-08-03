@@ -30,7 +30,7 @@ class PrimeCheck {
    public static void main(String[] args) {
        int x = 100; 
        PrimeCheck prime = new PrimeCheck();
-       Debug.addSymbolicInt(x, "sym_x");
+       x = Debug.addSymbolicInt(x, "sym_x");
        prime.isPrime(x);
        Debug.printPC("PC: ");
    }

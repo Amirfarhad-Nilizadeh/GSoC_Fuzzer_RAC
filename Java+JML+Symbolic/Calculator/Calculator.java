@@ -69,9 +69,9 @@ public class Calculator {
         int y = -12;
         char c = 'a';
         Calculator cal = new Calculator();
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
-        Debug.addSymbolicChar(c, "sym_c");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
+        c = Debug.addSymbolicChar(c, "sym_c");
         cal.calculate(x,y,c);
         Debug.printPC("PC: ");
     }

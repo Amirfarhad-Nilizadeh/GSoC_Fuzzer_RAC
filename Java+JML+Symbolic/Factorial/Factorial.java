@@ -46,7 +46,7 @@ public class Factorial
        public static void main(String[] args) {
            int x = 2; 
            Factorial fact = new Factorial();
-           Debug.addSymbolicInt(x, "sym_x");
+           x = Debug.addSymbolicInt(x, "sym_x");
            fact.factorial(x);
            Debug.printPC("PC: ");
        }

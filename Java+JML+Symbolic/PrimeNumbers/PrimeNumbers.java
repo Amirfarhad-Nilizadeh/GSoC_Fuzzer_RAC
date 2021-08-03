@@ -64,7 +64,7 @@ import gov.nasa.jpf.symbc.Debug;
         public static void main(String[] args) {
             int x = 30; 
             PrimeNumbers num = new PrimeNumbers();
-            Debug.addSymbolicInt(x, "sym_x");
+            x = Debug.addSymbolicInt(x, "sym_x");
             num.primeList(x);
             Debug.printPC("PC: ");
         }

@@ -339,13 +339,13 @@ public class StudentEnrollment {
     public static void main(String[] args) {
         int passedCredits = 40, semesterCredits = 15, payment = 1000, initialBalance = 100, intLateRegistration = 0, intDebit = 0, intOption = 0; 
         StudentEnrollment obj = new StudentEnrollment("firstName", "secondName");
-        Debug.addSymbolicInt(passedCredits, "sym_passedCredits");
-        Debug.addSymbolicInt(semesterCredits, "sym_semesterCredits");
-        Debug.addSymbolicInt(payment, "sym_payment");
-        Debug.addSymbolicInt(initialBalance, "sym_initialBalance");
-        Debug.addSymbolicInt(intLateRegistration, "sym_lateRegistration");
-        Debug.addSymbolicInt(intDebit, "sym_debit");
-        Debug.addSymbolicInt(intOption, "sym_option");
+        passedCredits = Debug.addSymbolicInt(passedCredits, "sym_passedCredits");
+        semesterCredits = Debug.addSymbolicInt(semesterCredits, "sym_semesterCredits");
+        payment = Debug.addSymbolicInt(payment, "sym_payment");
+        initialBalance = Debug.addSymbolicInt(initialBalance, "sym_initialBalance");
+        intLateRegistration = Debug.addSymbolicInt(intLateRegistration, "sym_lateRegistration");
+        intDebit = Debug.addSymbolicInt(intDebit, "sym_debit");
+        intOption = Debug.addSymbolicInt(intOption, "sym_option");
         boolean lateRegistration = (intLateRegistration == 0);
         boolean debit = (intDebit == 0);
         boolean option = (intOption == 0);

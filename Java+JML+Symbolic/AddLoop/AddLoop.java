@@ -25,8 +25,8 @@ public class AddLoop {
     }
     
     public static void main(String[] args) {
-        int x = 100; 
-        int y = -12;
+        int x = 2; 
+        int y = -1;
         x = Debug.addSymbolicInt(x, "sym_x");
         y = Debug.addSymbolicInt(y, "sym_y");
         AddLoop(x,y);

@@ -38,9 +38,9 @@ public class CombinationPermutation {
         int y = 4;
         boolean z = true;
         CombinationPermutation Obj = new CombinationPermutation();
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
-       // Debug.addSymbolicBoolean(z, "sym_z");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
+       // z = Debug.addSymbolicBoolean(z, "sym_z");
         Obj.select(x,y,z);
         Debug.printPC("PC: ");
     }

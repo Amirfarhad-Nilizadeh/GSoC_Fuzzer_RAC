@@ -20,14 +20,18 @@ public class CopyArray {
         int y = 8;
         int[] arrA = {7, 11, 12, 8, 4, 6, 5, 0, 3, 9, 10, 1, 2};
         int[] arrB = {4, 6, 5, 0, 3, 7, 10, 1, 2, 11, 12, 8, 9, 13, 15, 14};
+        
         for (int i = 0; i < arrA.length; i++) {
             arrA[i] = Debug.addSymbolicInt(arrA[i], "symA_"+i);   
         }
         for (int i = 0; i < arrB.length; i++) {
             arrB[i] = Debug.addSymbolicInt(arrB[i], "symB_"+i);   
         }
-        // Debug.addSymbolicInt(x, "sym_x");
-        // Debug.addSymbolicInt(y, "sym_y");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
+        
+        // assert (x <= y && x < arrA.length && y < arrB.length);
+        
         CopyArray(arrB,x, y, arrA);
         Debug.printPC("PC: ");
     }

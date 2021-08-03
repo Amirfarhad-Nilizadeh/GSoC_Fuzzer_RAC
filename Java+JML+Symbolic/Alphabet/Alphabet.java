@@ -247,7 +247,7 @@ public class Alphabet {
        int x = 0; 
        char c = 'i';
        Alphabet obj = new Alphabet(c);
-       Debug.addSymbolicInt(x, "sym_x");
+       x = Debug.addSymbolicInt(x, "sym_x");
        obj.driver(x);
        Debug.printPC("PC: ");
    }

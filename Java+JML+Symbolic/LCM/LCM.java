@@ -54,11 +54,11 @@ public class LCM {
     }
     
     public static void main(String[] args) {
-        int x = 3; 
+        int x = 2; 
         int y = 15;
         LCM obj = new LCM();
-        Debug.addSymbolicInt(x, "sym_x");
-        Debug.addSymbolicInt(y, "sym_y");
+        x = Debug.addSymbolicInt(x, "sym_x");
+        y = Debug.addSymbolicInt(y, "sym_y");
         obj.lcm(x, y);
         Debug.printPC("PC: ");
     }
