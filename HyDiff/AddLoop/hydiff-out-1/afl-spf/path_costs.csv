@@ -1,0 +1,143 @@
+Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
+0; ../hydiff-out-1/afl-spf/queue/id:000000,orig:example.txt; 128935; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000000,orig:example.txt
+2; ../hydiff-out-1/afl-spf/queue/id:000001,sync:afl,src:000001,+cov,highscore,+odiff; 132860; 240123904; 8; 2; 1; [0,0]; 1; 1
+synced file: id:000001,src:000000,op:havoc,rep:64,+cov,highscore,+odiff,+patchdist
+3; ../hydiff-out-1/afl-spf/queue/id:000002,sync:afl,src:000002,+cov,+ddiff; 132185; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000002,src:000000+000001,op:splice,rep:8,+cov,+ddiff
+3; ../hydiff-out-1/afl-spf/queue/id:000003,sync:afl,src:000003,+cov; 136001; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000003,src:000000+000002,op:splice,rep:32,+cov
+4; ../hydiff-out-1/afl-spf/queue/id:000004,sync:afl,src:000004,+cov; 136381; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000004,src:000002,op:havoc,rep:128,+cov
+5; ../hydiff-out-1/afl-spf/queue/id:000005,sync:afl,src:000005,+cov; 127723; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000005,src:000002,op:havoc,rep:8,+cov
+6; ../hydiff-out-1/afl-spf/queue/id:000006,sync:afl,src:000006,+cov; 132519; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000006,src:000002,op:havoc,rep:4,+cov
+7; ../hydiff-out-1/afl-spf/queue/id:000007,sync:afl,src:000007,+cov; 129552; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000007,src:000002,op:havoc,rep:2,+cov
+8; ../hydiff-out-1/afl-spf/queue/id:000008,sync:afl,src:000008,+cov; 127353; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000008,src:000002,op:havoc,rep:4,+cov
+9; ../hydiff-out-1/afl-spf/queue/id:000009,sync:afl,src:000009,+cov; 141196; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000009,src:000002,op:havoc,rep:4,+cov
+10; ../hydiff-out-1/afl-spf/queue/id:000010,sync:afl,src:000010,+cov; 134851; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000010,src:000002,op:havoc,rep:2,+cov
+11; ../hydiff-out-1/afl-spf/queue/id:000011,sync:afl,src:000011,+cov; 137443; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000011,src:000002,op:havoc,rep:8,+cov
+12; ../hydiff-out-1/afl-spf/queue/id:000012,sync:afl,src:000012,+cov; 138669; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000012,src:000002,op:havoc,rep:8,+cov
+13; ../hydiff-out-1/afl-spf/queue/id:000013,sync:afl,src:000013,+cov; 196444; 240123904; 5; 0; 0; [0,0]; 0; 0
+synced file: id:000013,src:000002,op:havoc,rep:4,+cov
+14; ../hydiff-out-1/afl-spf/queue/id:000014,sync:afl,src:000014,+cov; 135299; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000014,src:000002,op:havoc,rep:4,+cov
+15; ../hydiff-out-1/afl-spf/queue/id:000015,sync:afl,src:000015,+cov; 134957; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000015,src:000002,op:havoc,rep:4,+cov
+16; ../hydiff-out-1/afl-spf/queue/id:000016,sync:afl,src:000016,+cov; 130332; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000016,src:000002,op:havoc,rep:4,+cov
+17; ../hydiff-out-1/afl-spf/queue/id:000017,sync:afl,src:000017,+cov; 130111; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000017,src:000002,op:havoc,rep:4,+cov
+18; ../hydiff-out-1/afl-spf/queue/id:000018,sync:afl,src:000018,+cov; 122239; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000018,src:000002,op:havoc,rep:8,+cov
+19; ../hydiff-out-1/afl-spf/queue/id:000019,sync:afl,src:000019,+cov; 153856; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000019,src:000002,op:havoc,rep:32,+cov
+20; ../hydiff-out-1/afl-spf/queue/id:000020,sync:afl,src:000020,+cov; 136652; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000020,src:000002,op:havoc,rep:8,+cov
+21; ../hydiff-out-1/afl-spf/queue/id:000021,sync:afl,src:000021,+cov; 144691; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000021,src:000002,op:havoc,rep:8,+cov
+22; ../hydiff-out-1/afl-spf/queue/id:000022,sync:afl,src:000022,+cov; 137477; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000022,src:000002,op:havoc,rep:4,+cov
+23; ../hydiff-out-1/afl-spf/queue/id:000023,sync:afl,src:000023,+cov; 134277; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000023,src:000002,op:havoc,rep:64,+cov
+24; ../hydiff-out-1/afl-spf/queue/id:000024,sync:afl,src:000024,+cov; 142201; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000024,src:000002,op:havoc,rep:4,+cov
+25; ../hydiff-out-1/afl-spf/queue/id:000025,sync:afl,src:000025,+cov; 135792; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000025,src:000002,op:havoc,rep:8,+cov
+26; ../hydiff-out-1/afl-spf/queue/id:000026,sync:afl,src:000026,+cov; 128266; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000026,src:000002+000005,op:splice,rep:8,+cov
+27; ../hydiff-out-1/afl-spf/queue/id:000027,sync:afl,src:000027,+cov; 132839; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000027,src:000002+000021,op:splice,rep:8,+cov
+28; ../hydiff-out-1/afl-spf/queue/id:000028,sync:afl,src:000028,+cov; 127317; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000028,src:000003,op:havoc,rep:8,+cov
+29; ../hydiff-out-1/afl-spf/queue/id:000029,sync:afl,src:000029,+cov; 127804; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000029,src:000003,op:havoc,rep:2,+cov
+30; ../hydiff-out-1/afl-spf/queue/id:000030,sync:afl,src:000030,+cov; 169235; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000030,src:000003,op:havoc,rep:4,+cov
+31; ../hydiff-out-1/afl-spf/queue/id:000031,sync:afl,src:000031,+cov; 132504; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000031,src:000003,op:havoc,rep:2,+cov
+32; ../hydiff-out-1/afl-spf/queue/id:000032,sync:afl,src:000032,+cov; 127621; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000032,src:000003,op:havoc,rep:2,+cov
+32; ../hydiff-out-1/afl-spf/queue/id:000033,sync:afl,src:000033,+cov; 128488; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000033,src:000003,op:havoc,rep:4,+cov
+33; ../hydiff-out-1/afl-spf/queue/id:000034,sync:afl,src:000034,+cov; 137243; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000034,src:000003,op:havoc,rep:8,+cov
+34; ../hydiff-out-1/afl-spf/queue/id:000035,sync:afl,src:000035,+cov; 128007; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000035,src:000003,op:havoc,rep:4,+cov
+35; ../hydiff-out-1/afl-spf/queue/id:000036,sync:afl,src:000036,+cov; 128786; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000036,src:000003,op:havoc,rep:2,+cov
+36; ../hydiff-out-1/afl-spf/queue/id:000037,sync:afl,src:000037,+cov; 128399; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000037,src:000003,op:havoc,rep:2,+cov
+37; ../hydiff-out-1/afl-spf/queue/id:000038,sync:afl,src:000038,+cov; 135529; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000038,src:000003+000008,op:splice,rep:4,+cov
+38; ../hydiff-out-1/afl-spf/queue/id:000039,sync:afl,src:000039,+cov; 130707; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000039,src:000003+000022,op:splice,rep:64,+cov
+39; ../hydiff-out-1/afl-spf/queue/id:000040,sync:afl,src:000040,+cov; 127349; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000040,src:000003+000021,op:splice,rep:4,+cov
+40; ../hydiff-out-1/afl-spf/queue/id:000041,sync:afl,src:000041,+cov; 126893; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000041,src:000003+000023,op:splice,rep:2,+cov
+41; ../hydiff-out-1/afl-spf/queue/id:000042,sync:afl,src:000042,+cov; 129395; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000042,src:000003+000009,op:splice,rep:8,+cov
+41; ../hydiff-out-1/afl-spf/queue/id:000043,sync:afl,src:000043,+cov; 116724; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000043,src:000004+000032,op:splice,rep:2,+cov
+42; ../hydiff-out-1/afl-spf/queue/id:000044,sync:afl,src:000044,+cov; 130877; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000044,src:000004+000032,op:splice,rep:2,+cov
+43; ../hydiff-out-1/afl-spf/queue/id:000045,sync:afl,src:000045,+cov; 129600; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000045,src:000004+000020,op:splice,rep:16,+cov
+44; ../hydiff-out-1/afl-spf/queue/id:000046,sync:afl,src:000046,+cov; 130288; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000046,src:000004+000020,op:splice,rep:4,+cov
+45; ../hydiff-out-1/afl-spf/queue/id:000047,sync:afl,src:000047,+cov; 129796; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000047,src:000004+000020,op:splice,rep:4,+cov
+45; ../hydiff-out-1/afl-spf/queue/id:000048,sync:afl,src:000048,+cov; 124430; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000048,src:000004+000020,op:splice,rep:4,+cov
+46; ../hydiff-out-1/afl-spf/queue/id:000049,sync:afl,src:000049,+cov; 122279; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000049,src:000004+000020,op:splice,rep:8,+cov
+47; ../hydiff-out-1/afl-spf/queue/id:000050,sync:afl,src:000050,+cov; 131688; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000050,src:000004+000026,op:splice,rep:2,+cov
+48; ../hydiff-out-1/afl-spf/queue/id:000051,sync:afl,src:000051,+cov; 125591; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000051,src:000005,op:havoc,rep:4,+cov
+49; ../hydiff-out-1/afl-spf/queue/id:000052,sync:afl,src:000052,+cov; 129031; 240123904; 8; 2; 1; [0,0]; 1; 1
+synced file: id:000052,src:000005,op:havoc,rep:4,+cov
+50; ../hydiff-out-1/afl-spf/queue/id:000053,sync:afl,src:000053,+cov; 136988; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000053,src:000005,op:havoc,rep:16,+cov
+50; ../hydiff-out-1/afl-spf/queue/id:000054,sync:afl,src:000054,+cov; 139663; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000054,src:000005,op:havoc,rep:8,+cov
+51; ../hydiff-out-1/afl-spf/queue/id:000055,sync:afl,src:000055,+cov; 129366; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000055,src:000005,op:havoc,rep:32,+cov
+52; ../hydiff-out-1/afl-spf/queue/id:000056,sync:afl,src:000056,+cov; 129622; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000056,src:000005,op:havoc,rep:4,+cov
+53; ../hydiff-out-1/afl-spf/queue/id:000057,sync:afl,src:000057,+cov; 139279; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000057,src:000005,op:havoc,rep:8,+cov
+54; ../hydiff-out-1/afl-spf/queue/id:000058,sync:afl,src:000058,+cov; 135787; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000058,src:000005,op:havoc,rep:2,+cov
+56; ../hydiff-out-1/afl-spf/queue/id:000059,sync:afl,src:000059,+cov; 133384; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000059,src:000005,op:havoc,rep:2,+cov
+57; ../hydiff-out-1/afl-spf/queue/id:000060,sync:afl,src:000060,+cov; 136664; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000060,src:000005,op:havoc,rep:4,+cov
+58; ../hydiff-out-1/afl-spf/queue/id:000061,sync:afl,src:000061,+cov; 128067; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000061,src:000005,op:havoc,rep:4,+cov
+58; ../hydiff-out-1/afl-spf/queue/id:000062,sync:afl,src:000062,+cov; 134896; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000062,src:000005,op:havoc,rep:4,+cov
+59; ../hydiff-out-1/afl-spf/queue/id:000063,sync:afl,src:000063,+cov; 137443; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000063,src:000005,op:havoc,rep:8,+cov
+60; ../hydiff-out-1/afl-spf/queue/id:000064,sync:afl,src:000064,+cov; 129724; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000064,src:000005,op:havoc,rep:4,+cov
+61; ../hydiff-out-1/afl-spf/queue/id:000065,sync:afl,src:000065,+cov; 143235; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000065,src:000005,op:havoc,rep:8,+cov
+62; ../hydiff-out-1/afl-spf/queue/id:000066,sync:afl,src:000066,+cov; 129632; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000066,src:000005,op:havoc,rep:4,+cov
+63; ../hydiff-out-1/afl-spf/queue/id:000067,sync:afl,src:000067,+cov; 127323; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000067,src:000005,op:havoc,rep:4,+cov
+64; ../hydiff-out-1/afl-spf/queue/id:000068,sync:afl,src:000068,+cov; 140634; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000068,src:000005,op:havoc,rep:16,+cov
+65; ../hydiff-out-1/afl-spf/queue/id:000069,sync:afl,src:000069,+cov; 133935; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000069,src:000005,op:havoc,rep:2,+cov
+66; ../hydiff-out-1/afl-spf/queue/id:000070,sync:afl,src:000070,+cov; 135888; 240123904; 7; 1; 0; [0,0]; 0; 1
+synced file: id:000070,src:000005+000004,op:splice,rep:8,+cov

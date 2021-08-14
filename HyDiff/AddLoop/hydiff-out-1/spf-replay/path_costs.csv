@@ -1,0 +1,2 @@
+Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
+0; ../hydiff-out-1/spf-replay/queue/id:000000,orig:example.txt; 128956; 240123904; 7; 1; 0; [0,0]; 0; 1
