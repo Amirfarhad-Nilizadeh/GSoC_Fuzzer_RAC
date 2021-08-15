@@ -1,1 +1,10 @@
-Error: Could not find or load main class edu.cmu.sv.badger.app.BadgerRunner
+Exception in thread "main" java.lang.RuntimeException: [ERROR] Configuration file not found
+	at edu.cmu.sv.badger.app.BadgerInput.loadFromConfigFile(BadgerInput.java:552)
+	at edu.cmu.sv.badger.app.BadgerRunner.main(BadgerRunner.java:23)
+Caused by: java.io.FileNotFoundException: config_hybrid (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at edu.cmu.sv.badger.app.BadgerInput.loadFromConfigFile(BadgerInput.java:548)
+	... 1 more

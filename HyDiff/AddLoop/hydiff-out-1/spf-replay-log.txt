@@ -24,7 +24,7 @@
 [1;94m[*] [0mAttempting dry run with 'id:000000,orig:example.txt'...[0m
 [1;94m[*] [0mSpinning up the fork server...[0m
 [1;92m[+] [0mAll right - fork server is up.[0m
-[1;90m    len = 11, map size = 8, exec speed = 101482 us
+[1;90m    len = 11, map size = 8, exec speed = 111908 us
 [0m[1;92m[+] [0mAll test cases processed.[0m
 
 [1;93m[!] [1;97mWARNING: [0m[1;91mThe target binary is pretty slow! See docs/perf_tips.txt.[0m
@@ -32,7 +32,7 @@
 
 [1;90m    Test case count : [0m1 favored, 0 variable, 1 total
 [1;90m       Bitmap range : [0m8 to 8 bits (average: 8.00 bits)
-[1;90m        Exec timing : [0m101k to 101k us (average: 101k us)
+[1;90m        Exec timing : [0m111k to 111k us (average: 111k us)
 [0m
 [1;92m[+] [0mAll set and ready to roll![0m
 [1;94m[*] [0mEntering queue cycle 1.[0m

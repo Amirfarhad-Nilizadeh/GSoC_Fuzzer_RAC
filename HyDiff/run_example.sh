@@ -124,7 +124,7 @@ do
     cd ./symexe/
 
     # Start SPF
-    nohup java -Xmx6144m -cp "../../../../tool/symbolicexecution/badger-differential/build/*:../../../../tool/symbolicexecution/badger-differential/lib/*:../../../../tool/symbolicexecution/jpf-symbc-differential/build/*:../../../../tool/symbolicexecution/jpf-symbc-differential/lib/*:../../../../tool/symbolicexecution/jpf-core/build/*" edu.cmu.sv.badger.app.BadgerRunner config_symexe $j > ../symexe-out-$j/spf-log.txt &
+    nohup java -Xmx6144m -cp "/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/lib/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-symbc-differential/build/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-symbc-differential/lib/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-core/build/*" edu.cmu.sv.badger.app.BadgerRunner config_symexe $j > ../symexe-out-$j/spf-log.txt &
     spf_pid=$!
 
     # Wait for timebound
@@ -185,7 +185,7 @@ do
     cd ../symexe/
 
     # Start SPF
-    nohup java -Xmx6144m -cp "../../../../tool/symbolicexecution/badger-differential/build/*:../../../../tool/symbolicexecution/badger-differential/lib/*:../../../../tool/symbolicexecution/jpf-symbc-differential/build/*:../../../../tool/symbolicexecution/jpf-symbc-differential/lib/*:../../../../tool/symbolicexecution/jpf-core/build/*" edu.cmu.sv.badger.app.BadgerRunner config_hybrid $j > ../hydiff-out-$j/spf-log.txt &
+    nohup java -Xmx6144m -cp "/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/lib/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-symbc-differential/build/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-symbc-differential/lib/*:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-core/build/*" edu.cmu.sv.badger.app.BadgerRunner config_hybrid $j > ../hydiff-out-$j/spf-log.txt &
     spf_pid=$!
 
     # Wait for timebound

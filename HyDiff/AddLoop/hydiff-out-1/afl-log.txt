@@ -1,7 +1,7 @@
 [0;36mafl-fuzz [1;97m2.52b[0m by <lcamtuf@google.com>
 [1;92m[+] [0m[REG] Using regression cost model[0m
 [1;92m[+] [0mLooks like we're not running on a tty, so I'll be a bit less verbose.[0m
-[1;92m[+] [0mYou have 8 CPU cores and 2 runnable tasks (utilization: 25%).[0m
+[1;92m[+] [0mYou have 8 CPU cores and 3 runnable tasks (utilization: 38%).[0m
 [1;92m[+] [0mTry parallel jobs - see docs/parallel_fuzzing.txt.[0m
 [1;94m[*] [0mChecking CPU core loadout...[0m
 [1;92m[+] [0mFound a free CPU core, binding to #0.[0m
@@ -17,6 +17,9 @@
 
     echo core >/proc/sys/kernel/core_pattern
 [1;94m[*] [0mSetting up output directories...[0m
+[1;92m[+] [0mOutput directory exists but deemed OK to reuse.[0m
+[1;94m[*] [0mDeleting old session data...[0m
+[1;92m[+] [0mOutput dir cleanup successful.[0m
 [1;94m[*] [0mScanning 'in_dir'...[0m
 [1;92m[+] [0mNo auto-generated dictionary tokens to reuse.[0m
 [1;94m[*] [0mCreating hard links for all input files...[0m
@@ -24,7 +27,7 @@
 [1;94m[*] [0mAttempting dry run with 'id:000000,orig:example.txt'...[0m
 [1;94m[*] [0mSpinning up the fork server...[0m
 [1;92m[+] [0mAll right - fork server is up.[0m
-[1;90m    len = 11, map size = 8, exec speed = 105189 us
+[1;90m    len = 11, map size = 8, exec speed = 103149 us
 [0m[1;92m[+] [0mAll test cases processed.[0m
 
 [1;93m[!] [1;97mWARNING: [0m[1;91mThe target binary is pretty slow! See docs/perf_tips.txt.[0m
@@ -32,16 +35,15 @@
 
 [1;90m    Test case count : [0m1 favored, 0 variable, 1 total
 [1;90m       Bitmap range : [0m8 to 8 bits (average: 8.00 bits)
-[1;90m        Exec timing : [0m105k to 105k us (average: 105k us)
+[1;90m        Exec timing : [0m103k to 103k us (average: 103k us)
 [0m
 [1;92m[+] [0mAll set and ready to roll![0m
 [1;94m[*] [0mEntering queue cycle 1.[0m
 [1;94m[*] [0mFuzzing test case #0 (1 total, 0 uniq crashes found)...[0m
-[1;94m[*] [0mFuzzing test case #1 (4 total, 1 uniq crashes found)...[0m
-[1;94m[*] [0mFuzzing test case #2 (4 total, 1 uniq crashes found)...[0m
-[1;94m[*] [0mFuzzing test case #3 (28 total, 1 uniq crashes found)...[0m
-[1;94m[*] [0mFuzzing test case #4 (43 total, 1 uniq crashes found)...[0m
-[1;94m[*] [0mFuzzing test case #5 (51 total, 1 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #1 (6 total, 1 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #2 (41 total, 1 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #3 (41 total, 1 uniq crashes found)...[0m
+[1;94m[*] [0mFuzzing test case #4 (63 total, 1 uniq crashes found)...[0m
 [?25h[1;91m
 
 +++ Testing aborted by user +++
