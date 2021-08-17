@@ -13,15 +13,16 @@ jpf.target=SymbcDriver
 symbolic.dp=z3bitvector
 
 symbolic.shadow=false
+symbolic.shadow.cfg=false
+symbolic.optimizechoices=false
 
 symexe.wait.sec=60
 symexe.delay.sec=0
 symexe.bse.steps=0
 symexe.iterations=10
 
-analysis.method=diff
-analysis.heuristic=new-diff-new-branch-closer-patch-highest-cost-diff-highest-node
-analysis.cost.metric=instructions
+analysis.method=cov
+analysis.heuristic=branch-lowest-all
 
 io.utils=full-int-byte-array
 io.input.sizes=2
