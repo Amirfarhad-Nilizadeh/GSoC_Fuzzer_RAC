@@ -1,0 +1,2 @@
+Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
+4; ../fuzzer-out-1/afl/queue/id:000000,orig:example.txt; 655874; 251658240; 17; 0; 0; [2147483647,2147483647]; 0; 0

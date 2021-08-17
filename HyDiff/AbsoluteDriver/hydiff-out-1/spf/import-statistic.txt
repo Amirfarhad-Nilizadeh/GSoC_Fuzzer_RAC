@@ -1,0 +1,3 @@
+# time, file, cost 
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../fuzzing/in_dir/example.txt,null/null
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out-1/afl/queue/id:000000,orig:example.txt,null/null

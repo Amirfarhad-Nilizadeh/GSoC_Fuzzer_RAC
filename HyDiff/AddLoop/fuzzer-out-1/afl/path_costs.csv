@@ -1,6 +1,0 @@
-Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
-0; ../fuzzer-out-1/afl/queue/id:000000,orig:example.txt; 150388; 231211008; 7; 1; 0; [1,1]; 0; 1
-2; ../fuzzer-out-1/afl/queue/id:000001,src:000000,op:havoc,rep:16,+cov,highscore,+odiff,+patchdist; 146078; 231211008; 8; 2; 1; [1,0]; 1; 1
-59; ../fuzzer-out-1/afl/queue/id:000002,src:000000+000001,op:splice,rep:2,+cov,+ddiff; 145608; 231211008; 7; 1; 0; [2,1]; 0; 1
-68; ../fuzzer-out-1/afl/queue/id:000003,src:000001,op:havoc,rep:8,+cov; 143292; 231211008; 7; 1; 0; [2,1]; 0; 1
-69; ../fuzzer-out-1/afl/queue/id:000004,src:000001,op:havoc,rep:8,+cov; 154341; 231211008; 7; 1; 0; [2,1]; 0; 1

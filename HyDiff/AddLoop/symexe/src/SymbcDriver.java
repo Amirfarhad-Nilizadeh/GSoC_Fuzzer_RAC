@@ -13,10 +13,10 @@
 			byte[] bytes = new byte[Integer.BYTES];
 
 			if (fis.read(bytes) != -1) 
-				num1 = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_num1");
+				num1 = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_0");
 
 			if (fis.read(bytes) != -1) 
-				num2 = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_num2");
+				num2 = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_1");
 		} catch (IOException e) {
            		System.err.println("Error reading input");
             		e.printStackTrace();
@@ -25,8 +25,8 @@
 
 				 
 	       } else {
-            		num1 = Debug.makeSymbolicInteger("sym_num1");
-            		num2 = Debug.makeSymbolicInteger("sym_num2");
+            		num1 = Debug.makeSymbolicInteger("sym_0");
+            		num2 = Debug.makeSymbolicInteger("sym_1");
               }
         
         	System.out.println("num1=" + num1);

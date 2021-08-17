@@ -1,2 +1,0 @@
-Fuzzer runs handler thread started.
-Unable to bind to port 7007

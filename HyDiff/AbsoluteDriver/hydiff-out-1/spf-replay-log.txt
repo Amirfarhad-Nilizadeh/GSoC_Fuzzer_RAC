@@ -1,0 +1,48 @@
+[0;36mafl-fuzz [1;97m2.52b[0m by <lcamtuf@google.com>
+[1;92m[+] [0m[REG] Using regression cost model[0m
+[1;92m[+] [0mLooks like we're not running on a tty, so I'll be a bit less verbose.[0m
+[1;92m[+] [0mYou have 8 CPU cores and 1 runnable tasks (utilization: 12%).[0m
+[1;92m[+] [0mTry parallel jobs - see docs/parallel_fuzzing.txt.[0m
+[1;94m[*] [0mChecking CPU core loadout...[0m
+[1;92m[+] [0mFound a free CPU core, binding to #0.[0m
+[1;94m[*] [0mChecking core_pattern...[0m
+
+[1;91m[-] [0mHmm, your system is configured to send core dump notifications to an
+    external utility. This will cause issues: there will be an extended delay
+    between stumbling upon a crash and having this information relayed to the
+    fuzzer via the standard waitpid() API.
+
+    To avoid having crashes misinterpreted as timeouts, please log in as root
+    and temporarily modify /proc/sys/kernel/core_pattern, like so:
+
+    echo core >/proc/sys/kernel/core_pattern
+[1;94m[*] [0mSetting up output directories...[0m
+[1;94m[*] [0mScanning 'in_dir'...[0m
+[1;92m[+] [0mNo auto-generated dictionary tokens to reuse.[0m
+[1;94m[*] [0mCreating hard links for all input files...[0m
+[1;94m[*] [0mValidating target binary...[0m
+[1;94m[*] [0mAttempting dry run with 'id:000000,orig:example.txt'...[0m
+[1;94m[*] [0mSpinning up the fork server...[0m
+
+[1;91m[-] [0mWhoops, the target binary crashed suddenly, before receiving any input
+    from the fuzzer! There are several probable explanations:
+
+    - The current memory limit (50.0 MB) is too restrictive, causing the
+      target to hit an OOM condition in the dynamic linker. Try bumping up
+      the limit with the -m setting in the command line. A simple way confirm
+      this diagnosis would be:
+
+      ( ulimit -Sv $[49 << 10]; /path/to/fuzzed_app )
+
+      Tip: you can use http://jwilk.net/software/recidivm to quickly
+      estimate the required amount of virtual memory for the binary.
+
+    - The binary is just buggy and explodes entirely on its own. If so, you
+      need to fix the underlying problem or find a better replacement.
+
+    - Less likely, there is a horrible bug in the fuzzer. If other options
+      fail, poke <lcamtuf@coredump.cx> for troubleshooting tips.
+)B[?25h[0m[1;91m
+[-] PROGRAM ABORT : [1;97mFork server crashed with signal 6[1;91m
+         Location : [0minit_forkserver(), afl-fuzz-import-spf.c:2326
+
