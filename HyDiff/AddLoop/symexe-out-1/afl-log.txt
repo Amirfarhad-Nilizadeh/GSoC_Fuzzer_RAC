@@ -17,9 +17,6 @@
 
     echo core >/proc/sys/kernel/core_pattern
 [1;94m[*] [0mSetting up output directories...[0m
-[1;92m[+] [0mOutput directory exists but deemed OK to reuse.[0m
-[1;94m[*] [0mDeleting old session data...[0m
-[1;92m[+] [0mOutput dir cleanup successful.[0m
 [1;94m[*] [0mScanning 'in_dir'...[0m
 [1;92m[+] [0mNo auto-generated dictionary tokens to reuse.[0m
 [1;94m[*] [0mCreating hard links for all input files...[0m
@@ -27,7 +24,7 @@
 [1;94m[*] [0mAttempting dry run with 'id:000000,orig:example.txt'...[0m
 [1;94m[*] [0mSpinning up the fork server...[0m
 [1;92m[+] [0mAll right - fork server is up.[0m
-[1;90m    len = 11, map size = 8, exec speed = 106924 us
+[1;90m    len = 11, map size = 8, exec speed = 106403 us
 [0m[1;92m[+] [0mAll test cases processed.[0m
 
 [1;93m[!] [1;97mWARNING: [0m[1;91mThe target binary is pretty slow! See docs/perf_tips.txt.[0m

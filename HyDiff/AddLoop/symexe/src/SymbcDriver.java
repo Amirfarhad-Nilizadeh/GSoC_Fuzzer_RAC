@@ -34,4 +34,5 @@
 
 		AddLoop add = new AddLoop();
 		add.AddLoop(num1, num2);
+	}
 }

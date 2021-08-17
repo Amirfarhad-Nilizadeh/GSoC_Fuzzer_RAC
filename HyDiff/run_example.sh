@@ -11,7 +11,7 @@ trap "exit" INT
 #####################
 
 number_of_runs=1 #30
-time_bound=600 #sec = 10min
+time_bound=120 #sec = 10min
 step_size_eval=30
 
 declare -a subjects=(
@@ -104,7 +104,7 @@ do
   cd ../../
 
   # Evaluate run
-  python3 ../scripts/evaluate_regression_fuzz.py ${subjects[i]}/fuzzer-out- $number_of_runs $time_bound $step_size_eval
+  #python3 /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/experiments/scripts/evaluate_regression_fuzz.py ${subjects[i]}/fuzzer-out- $number_of_runs $time_bound $step_size_eval
 
 done
 
@@ -155,7 +155,7 @@ do
   cd ../
 
   # Evaluate run
-  python3 ../scripts/evaluate_regression_symexe.py ${subjects[i]}/symexe-out- $number_of_runs $time_bound $step_size_eval
+  #python3 /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/experiments/scripts/evaluate_regression_symexe.py ${subjects[i]}/symexe-out- $number_of_runs $time_bound $step_size_eval
 
 done
 
@@ -238,6 +238,6 @@ do
   cd ../
 
   # Evaluate run
-  python3 ../scripts/evaluate_regression_hydiff.py ${subjects[i]}/hydiff-out- $number_of_runs $time_bound $step_size_eval
+  #python3 /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/experiments/scripts/evaluate_regression_hydiff.py ${subjects[i]}/hydiff-out- $number_of_runs $time_bound $step_size_eval
 
 done

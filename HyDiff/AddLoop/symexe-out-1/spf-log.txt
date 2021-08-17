@@ -1,10 +1,24 @@
-Exception in thread "main" java.lang.RuntimeException: [ERROR] Configuration file not found
-	at edu.cmu.sv.badger.app.BadgerInput.loadFromConfigFile(BadgerInput.java:552)
-	at edu.cmu.sv.badger.app.BadgerRunner.main(BadgerRunner.java:23)
-Caused by: java.io.FileNotFoundException: config_symexe (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at edu.cmu.sv.badger.app.BadgerInput.loadFromConfigFile(BadgerInput.java:548)
-	... 1 more
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AddLoop/symexe/../fuzzing/in_dir/example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AddLoop/symexe/../fuzzing/in_dir/example.txt")
+
+====================================================== search started: 8/16/21 10:35 PM
+num1=1246579787
+num2=1701603694
