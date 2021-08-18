@@ -49,3 +49,7 @@ buildNumber.properties
 
 #VSCode
 */.vscode
+
+HyDiff/AddLoop/symexe-out*
+HyDiff/AddLoop/fuzzer-out*
+HyDiff/AddLoop/hydiff-out*

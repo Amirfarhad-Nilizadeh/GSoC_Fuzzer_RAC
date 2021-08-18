@@ -47,12 +47,12 @@ do
   rm -rf bin
   mkdir bin
   cd src
-  javac -cp ${classpaths[i]}:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/fuzzing/kelinci-differential/instrumentor/build/libs/kelinci.jar *.java -d ../bin
+  javac -cp ${classpaths[i]}:/Users/yannic/repositories/hydiff/tool/fuzzing/kelinci-differential/instrumentor/build/libs/kelinci.jar *.java -d ../bin
   cd ..
 
   # Instrument fuzzing bytecode
   rm -rf bin-instr
-  java -cp ${classpaths[i]}:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/fuzzing/kelinci-differential/instrumentor/build/libs/kelinci.jar edu.cmu.sv.kelinci.instrumentor.Instrumentor -mode REGRESSION -i bin -o bin-instr -skipmain -export-cfgdir cfg -skipclass ${instr_skip_classes[i]}
+  java -cp ${classpaths[i]}:/Users/yannic/repositories/hydiff/tool/fuzzing/kelinci-differential/instrumentor/build/libs/kelinci.jar edu.cmu.sv.kelinci.instrumentor.Instrumentor -mode JUMPS -i bin -o bin-instr -skipmain -skipclass ${instr_skip_classes[i]}
 
   cd ../symexe
 
@@ -60,7 +60,7 @@ do
   rm -rf bin
   mkdir bin
   cd src
-  javac -g -cp ${classpaths[i]}:/home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/jpf-symbc-differential/build/* *.java -d ../bin
+  javac -g -cp ${classpaths[i]}:/Users/yannic/repositories/hydiff/tool/symbolicexecution/jpf-symbc-differential/build/* *.java -d ../bin
   cd ../../../
   echo
 
