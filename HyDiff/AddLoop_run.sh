@@ -11,7 +11,7 @@ trap "exit" INT
 #####################
 
 number_of_runs=1 #30
-time_bound=12 #sec = 10min
+time_bound=30 #sec = 10min
 step_size_eval=30
 
 declare -a subjects=(
