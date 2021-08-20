@@ -14,7 +14,7 @@
 
 			if (fis.read(bytes) != -1) 
 				key = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_0");
-			for (i = 1; i <= arr.length; i++) {
+			for (int i = 1; i <= arr.length; i++) {
 				if (fis.read(bytes) != -1) 
 					arr[i-1] = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_"+i);
 			}
@@ -27,16 +27,16 @@
 				 
 	       } else {
             		key = Debug.makeSymbolicInteger("sym_0");
-			for (i = 1; i <= arr.length; i++) {
+			for (int i = 1; i <= arr.length; i++) 
             			arr[i-1] = Debug.makeSymbolicInteger("sym_"+i);
               }
         
         	System.out.println("key = " + key);
-		for (i = 0; i < arr.length - 1; i++) {
+		for (int i = 0; i < arr.length - 1; i++) {
 			System.out.print("{ ");
         		System.out.print(arr[i] + ", ");
 		}
-		System.out.print(arr[i] + " }");
+		System.out.print(arr[arr.length -1] + " }");
 
 		BinarySearch obj = new BinarySearch();
                	obj.Binary(arr, key);
