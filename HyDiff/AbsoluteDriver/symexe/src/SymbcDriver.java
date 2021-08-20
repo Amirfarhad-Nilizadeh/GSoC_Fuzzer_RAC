@@ -15,18 +15,18 @@
 				byte[] longBytes = new byte[Long.BYTES];
 
 				if (fis.read(shortBytes) != -1)
-					shortNum = (short)Debug.addSymbolicInt(ByteBuffer.wrap(shortBytes).getInt(), "sym_shortNum");
+					shortNum = (short)Debug.addSymbolicInt(ByteBuffer.wrap(shortBytes).getInt(), "sym_0");
 				else
 					throw new RuntimeException("too less data");
 
 
 				if (fis.read(intBytes) != -1) 
-					intNum = Debug.addSymbolicInt(ByteBuffer.wrap(intBytes).getInt(), "sym_intNum");
+					intNum = Debug.addSymbolicInt(ByteBuffer.wrap(intBytes).getInt(), "sym_1");
 				else
 					throw new RuntimeException("too less data");
 
 				if (fis.read(longBytes) != -1) 
-					longNum = Debug.addSymbolicInt(ByteBuffer.wrap(longBytes).getInt(), "sym_longNum");
+					longNum = Debug.addSymbolicInt(ByteBuffer.wrap(longBytes).getInt(), "sym_2");
 				else
 					throw new RuntimeException("too less data");
 			
@@ -38,9 +38,9 @@
 			}
 		} else {
 
-			shortNum = (short) Debug.makeSymbolicInteger("sym_shortNum");
-            		intNum = Debug.makeSymbolicInteger("sym_intNum");
-			longNum = Debug.makeSymbolicInteger("sym_longNum");
+			shortNum = (short) Debug.makeSymbolicInteger("sym_0");
+            		intNum = Debug.makeSymbolicInteger("sym_1");
+			longNum = Debug.makeSymbolicInteger("sym_2");
                }
 
 		System.out.println("shortNum=" + shortNum);

@@ -1,2 +1,0 @@
-Fuzzer runs handler thread started.
-Server listening on port 7007

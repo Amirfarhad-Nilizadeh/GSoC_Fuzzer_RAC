@@ -7,7 +7,7 @@
 trap "exit" INT
 
 declare -a subjects=(
-"AddLoop"
+"LCM"
 )
 
 declare -a classpaths=(

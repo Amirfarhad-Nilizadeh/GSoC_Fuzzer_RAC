@@ -1,2 +1,0 @@
-# time, file, cost 
-0,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../fuzzing/in_dir/example.txt,null/null

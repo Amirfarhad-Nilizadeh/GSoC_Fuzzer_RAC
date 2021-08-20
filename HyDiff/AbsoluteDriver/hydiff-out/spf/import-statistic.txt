@@ -1,0 +1,21 @@
+# time, file, cost 
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../fuzzing/in_dir/example.txt,null/null
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000000,orig:example.txt,null/null
+241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null
+180,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+181,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+181,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null
+2040,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+2041,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+2041,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null
+6241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+6241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+6241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null
+6240,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+6241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+6241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:16,+cov,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:128,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov,null/null

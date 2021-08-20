@@ -8,8 +8,8 @@
      import edu.cmu.sv.kelinci.Mem;
 
      public class FuzzDriver {	 
-    	 private static String address ="/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Absolute/jml";
-	 private static String addressPost ="/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Absolute/jmlPost";
+    	 private static String address ="/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/jml";
+	 private static String addressPost ="/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AbsoluteDriver/jmlPost";
     	 public static void main(String args[]) {
 
 	 	if (args.length != 1) {
