@@ -1,0 +1,3 @@
+Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
+7; ../hydiff-out/afl/queue/id:000000,orig:example.txt; 70484673; 251658240; 19; 0; 0; []; 0; 0
+391; ../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:16,+cov,highscore; 469347939; 251658240; 62; 0; 0; []; 0; 0

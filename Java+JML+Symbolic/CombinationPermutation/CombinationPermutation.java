@@ -36,11 +36,13 @@ public class CombinationPermutation {
     public static void main(String[] args) {
         int x = 15; 
         int y = 4;
+	int tmp = 0;
         boolean z = true;
         CombinationPermutation Obj = new CombinationPermutation();
         x = Debug.addSymbolicInt(x, "sym_x");
         y = Debug.addSymbolicInt(y, "sym_y");
-       // z = Debug.addSymbolicBoolean(z, "sym_z");
+        tmp = Debug.addSymbolicInt(tmp, "sym_tmp");
+	z = (tmp != 0);
         Obj.select(x,y,z);
         Debug.printPC("PC: ");
     }

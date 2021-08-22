@@ -1,0 +1,73 @@
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/BubbleSort/symexe/../fuzzing/in_dir/example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/BubbleSort/symexe/../fuzzing/in_dir/example.txt")
+
+====================================================== search started: 8/21/21 2:00 PM
+{ 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694,  }
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArrayIndexOutOfBoundsException: 13
+	at BubbleSort.bubbleSort(BubbleSort.java:22)
+	at SymbcDriver.main(SymbcDriver.java:38)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at BubbleSort.bubbleSort(BubbleSort.java:22)
+	at SymbcDriver.main(SymbcDriver.java:38)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArrayIndexOutOfBoundsException: 13  at B..."
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=25,visited=0,backtracked=25,end=0
+search:             maxDepth=25,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=24
+heap:               new=539,released=130,maxLive=390,gcCycles=24
+instructions:       6835
+max memory:         240MB
+loaded code:        classes=74,methods=1626
+
+====================================================== search finished: 8/21/21 2:00 PM
+#FOUND ERRORS = 1
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main()
+
+====================================================== search started: 8/21/21 2:00 PM
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  }

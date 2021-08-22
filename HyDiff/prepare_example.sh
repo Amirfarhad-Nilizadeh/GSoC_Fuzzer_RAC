@@ -7,7 +7,7 @@
 trap "exit" INT
 
 declare -a subjects=(
-"BinarySearch"
+"Time"
 )
 
 declare -a classpaths=(

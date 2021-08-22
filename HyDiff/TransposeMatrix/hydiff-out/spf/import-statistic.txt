@@ -1,0 +1,3 @@
+# time, file, cost 
+0,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/TransposeMatrix/symexe/../fuzzing/in_dir/example.txt,null/null
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/TransposeMatrix/symexe/../hydiff-out/afl/queue/id:000000,orig:example.txt,null/null

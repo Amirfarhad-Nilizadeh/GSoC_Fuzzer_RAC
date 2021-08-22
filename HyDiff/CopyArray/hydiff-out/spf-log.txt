@@ -1,0 +1,60 @@
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/CopyArray/symexe/../fuzzing/in_dir/example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/CopyArray/symexe/../fuzzing/in_dir/example.txt")
+
+====================================================== search started: 8/22/21 2:41 AM
+arrA = { 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694,  }arrB = { 
+1280009580, 1768842089, 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694, 1667844685, 1280009580, 1768842089, 1246579787, 1701603694, 1667844685,  }
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=2,visited=0,backtracked=2,end=1
+search:             maxDepth=2,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=1
+heap:               new=685,released=305,maxLive=395,gcCycles=2
+instructions:       9571
+max memory:         240MB
+loaded code:        classes=68,methods=1591
+
+====================================================== search finished: 8/22/21 2:41 AM
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main()
+
+====================================================== search started: 8/22/21 2:41 AM
+arrA = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  }arrB = { 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  }

@@ -1,0 +1,67 @@
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/BankAccount/symexe/../fuzzing/in_dir/example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/BankAccount/symexe/../fuzzing/in_dir/example.txt")
+
+====================================================== search started: 8/22/21 2:46 AM
+option = 557844813
+amount = 1298083881
+currentBalance = 676154701
+previousTransaction = 1296911693
+sel = 844254541
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=5,visited=0,backtracked=5,end=1
+search:             maxDepth=5,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=4
+heap:               new=437,released=53,maxLive=399,gcCycles=4
+instructions:       4203
+max memory:         240MB
+loaded code:        classes=68,methods=1605
+
+====================================================== search finished: 8/22/21 2:46 AM
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main()
+
+====================================================== search started: 8/22/21 2:46 AM
+option = 0
+amount = 0
+currentBalance = 0
+previousTransaction = 0
+sel = 0

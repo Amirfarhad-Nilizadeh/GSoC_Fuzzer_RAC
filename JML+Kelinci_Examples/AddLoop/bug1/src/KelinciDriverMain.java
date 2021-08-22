@@ -1,8 +1,4 @@
-     import java.io.File;
-     import java.io.FileInputStream;
-     import java.io.IOException;
-     import java.io.FileWriter;
-     import java.io.PrintWriter;
+     import java.io.*;
      import java.nio.ByteBuffer;
      import edu.cmu.sv.kelinci.Kelinci;
      import edu.cmu.sv.kelinci.Mem;
@@ -55,10 +51,9 @@
 		//driverArg = "JMLDriver " + _size + " >log.txt 2>&1";
 		driverArg = "JMLDriver " + _num1 + " " + _num2;
 		
-		builderProg.command("sh", "-c", "runrac " + driverArg);
 		if (!flag) {
+			builderProg.command("sh", "-c", "runrac " + driverArg);
 			builderProg.directory(new File(address));
-			Process process = null;
 		} else {
 			builderProg.command("sh", "-c", "runrac -Dorg.jmlspecs.openjml.racexceptions " + driverArg);
 			builderProg.directory(new File(addressPost));
