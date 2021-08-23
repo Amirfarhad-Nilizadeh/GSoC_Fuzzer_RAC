@@ -1,2 +1,2 @@
 # time, file, cost 
-1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/LinearSerach/symexe/../fuzzing/in_dir/example.txt,0.0/0.0
+0,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/LinearSerach/symexe/../fuzzing/in_dir/example.txt,0.0/0.0

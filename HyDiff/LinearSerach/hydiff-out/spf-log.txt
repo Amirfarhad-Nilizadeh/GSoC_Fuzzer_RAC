@@ -19,7 +19,7 @@ JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All ri
 ====================================================== system under test
 SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/LinearSerach/symexe/../fuzzing/in_dir/example.txt")
 
-====================================================== search started: 8/22/21 2:08 AM
+====================================================== search started: 8/22/21 3:24 AM
 key = 1332766062
 { 1246579786, 1296845669, 1818848867, 1766477132, 1264938089, 1852008778, 1296845669, 1818848867, 1766477132, 1264938089 }
 ====================================================== error 1
@@ -49,7 +49,7 @@ instructions:       5705
 max memory:         240MB
 loaded code:        classes=73,methods=1624
 
-====================================================== search finished: 8/22/21 2:08 AM
+====================================================== search finished: 8/22/21 3:24 AM
 #FOUND ERRORS = 1
 [WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
 symbolic.min_int=-2147483648
@@ -70,6 +70,6 @@ JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All ri
 ====================================================== system under test
 SymbcDriver.main()
 
-====================================================== search started: 8/22/21 2:08 AM
+====================================================== search started: 8/22/21 3:24 AM
 key = 0
 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }

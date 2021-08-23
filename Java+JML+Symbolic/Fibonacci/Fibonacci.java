@@ -49,7 +49,7 @@ public class Fibonacci {
             //@ assume 0 < fib[index - 2] + fib[index - 1];
             fib[index] = fib[index - 2] + fib[index - 1];
             index++;
-                        //@ assume fib[index-2] <  fib[index-1];
+            //@ assume fib[index-2] <  fib[index-1];
         }
     }
     public static void main(String[] args) {

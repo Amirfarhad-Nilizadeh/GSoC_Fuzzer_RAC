@@ -4,12 +4,50 @@ Author: Amirfarhad Nilizadeh (<af.nilizadeh@knights.ucf.edu>)
 
 Mentor: Corina Pasareanu (<corina.pasareanu@west.cmu.edu>) Yannic Noller (<yannic.noller@acm.org>) and Pavel Parízek (<parizek@d3s.mff.cuni.cz>).
 
-Project Description: Security and Semantic bugs exist in software systems, and discovering them is time-consuming, complicated, and challenging. Several static and dynamic techniques are presented for discovering bugs. However, finding a bug is still a challenging topic. In this work, we investigate developing a prototype tool that uses the benefits of using the lightweight specification, fuzzing, and symbolic execution for discovering security and semantic bugs in an arbitrary Java program. This proposal aims to extend Badger, meaning both SPF and Kelinci, with the ability of handling both pre and postconditions using the runtime assertion checker of OpenJML with the lightweight specification.
+Project Description: Security and Semantic bugs exist in software systems, and discovering them is time-consuming, complicated, and challenging. Several static and dynamic techniques are presented for discovering bugs. However, finding a bug is still a challenging topic. In this work, we investigate developing a prototype tool that uses the benefits of using the lightweight specification, fuzzing, and symbolic execution for discovering security and semantic bugs in an arbitrary Java program. This proposal aims to extend HyDiff, meaning both SPF and Kelinci, with the ability to handle pre and postconditions using the runtime assertion checker of OpenJML with the lightweight specification.
 
-Requirements:
+# Requirements:
 
-Java 8 in a Linux system. (Kelinci, Badger, OpenJML, and SPF all work with Java 8.)
+Java 8 in a Linux system. (Kelinci, HyDiff, OpenJML, and SPF all work with Java 8.)
 
-For the first evaluation, OpenJML is combined with Kelinci to check the first evaluation, and you can find 14 examples with results. Also, the results of ARJAE (an APR tool) for repairing buggy programs of QuixBugs are in the ARJAE directory.
+# Installation
 
-The next step is combining HyDiff (that has SPF inside) with OpenJML.
+For using JMLHyDiff, both HyDiff and OpenJML should be installed in a Linux system using the following steps. (We used OpenJDK version "1.8.0_282" on Ubuntu 18.4, also both HyDiff and OpenJML require Java 8.) 
+
+In the [Tool](https://github.com/Amirfarhad-Nilizadeh/JMLKelinci/tree/main/Tool) directory you can find last release (in March 2021) of "openjml0.8.52", "Kelinci", and "afl2.52b". You need to install these to use JMLKelinci as described below. (You can find later releases of these tools by the following links: [OpenJML](https://github.com/OpenJML/OpenJML/releases), [HyDiff](https://github.com/yannicnoller/hydiff), and [AFL](https://lcamtuf.coredump.cx/afl/releases/?O=D).)
+
+
+For using JMLHyDiff after downloading the Tool directory, install HyDiff using the installation document on the [HyDiff](https://github.com/yannicnoller/hydiff) repository. Next, make the "runrac.sh" shell script (which is in the [ShellScripts directory](https://github.com/Amirfarhad-Nilizadeh/JMLKelinci/tree/main/ShellScripts)) executable for the Linux system with the following steps.
+1. Open the shell script (for example, with the `vim runrac.sh` command).
+2. Change the address of in the shell variable `OPENJML` to the full path to where OpenJML has been extracted in your system; for example, you might change the script to say: 	 
+
+        OPENJML="$HOME/Tool/openjml"
+ 
+3. Then run `chmod u+x runrac.sh` to make the shell script executable for your system.
+
+
+# Executing Examples
+
+
+We used 28 programs from the [Java+JML dataset](https://github.com/Amirfarhad-Nilizadeh/Java-JML) and 28 buggy programs from the [BuggyJava+JML dataset](https://github.com/Amirfarhad-Nilizadeh/BuggyJavaJML). 
+
+In these examples, we provide all necessary inputs (a Java buggy program under test, an entry method with a JML precondition, a fuzzer driver, a JMLDriver, and an initial seed) to cover branches with valid inputs and detect bugs. 
+
+We provide four shell scripts with the name `prepare_examples.sh`, `hydiffServer.sh`, `hydiffAfl.sh`, and `hydiffSpf.sh` to run these examples, which are in the [ShellScripts directory](https://github.com/Amirfarhad-Nilizadeh/JMLKelinci/tree/main/ShellScripts). Before running these shell scripts, you should update the name of the example in the `prepare_examples.sh`.
+
+For this study, we used OpenJML v.0.8.52, but the examples also work with the (August 2021) last release (v.0.8.55).
+
+For rerunning these examples first run the `prepare_examples.sh` in the HyDiff directory then run `hydiffServer.sh`, `hydiffAfl.sh`, and `hydiffSpf.sh` in each program's directory. When the tool finds a bug, it saves the input test that triggers the bug in a file named "Counterexample.txt" in the fuzzing directory.
+
+## Results:
+
+JMLHyDiff could reveal semantic bugs on all 28 programs. You can find results in the HyDiff directory. The generated counterexamples are saved in a text file in the fuzzing directory of each buggy program under the test. Also, the Java+JML+Symbolic directory contains the correct version of Java+JML programs with their provided jpf file for each program. Also, you can find the result of using Kelinci and JML in the JML+Kelinci_Examples directory for detecting bugs.
+
+# Architecture
+
+The tool has two main components.
+
+The first is the fuzzer side (HyDiff) that instruments the Java program, generates new inputs, monitors branch coverage, and discovers crashes in the program. Also, HyDiff itself has two parts: its Fuzzing role with Kelinci and Symbolic Execution role with SPF. The C part of the Kelinci sends the input files generated by AFL to the JAVA part over a TCP connection. It then receives the results and forwards them to AFL. The Java side instruments a target application with AFL style administration, plus a component to communicate with the C side. The instrumented program sets up a TCP server and runs the target application in a separate thread for each incoming request. It sends back an exit code (success, timeout, crash, or queue full), plus the gathered path information. Also, the SPF inside the HyDiff will generate input tests to help the fuzzing tool generate better input tests. Kelinci looks at the generated inputs by SPF, and if they were interesting, they would use them.
+
+The second component is OpenJML's runtime assertion checker (RAC). The JML RAC bypasses invalid inputs by evaluating the program's precondition. We assume that the JML precondition of the entry method and any necessary constructors are available. There are some tools available that can infer preconditions for JML, like [Daikon](http://plse.cs.washington.edu/daikon/). OpenJML's RAC is called in a separate process after inputs are generated with Kelinci. If the precondition is satisfied, then Kelinci will run and monitor the program under test. Also, if the precondition is satisfied, the OpenJML's RAC is called in a separate process to check any contract violation while running the program with generated input. It saves an input test that can show a bug in the program as a counterexample. Also, if the precondition is not satisfied, HyDiff will generate another input. In JMLHyDiff, the process's exit code is queried to determine if the program's precondition or postcondition was satisfied. 
+

@@ -1,0 +1,1556 @@
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../fuzzing/in_dir/example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../fuzzing/in_dir/example.txt")
+
+====================================================== search started: 8/22/21 4:32 PM
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 2
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.lateEnrollment(StudentEnrollment.java:187)
+	at StudentEnrollment.enroll(StudentEnrollment.java:208)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.lateEnrollment(StudentEnrollment.java:187)
+	at StudentEnrollment.enroll(StudentEnrollment.java:208)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 3
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 4
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 5
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #5
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 6
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #6
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 7
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #7
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 8
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.payTuitionWithDebitCard(StudentEnrollment.java:228)
+	at StudentEnrollment.pay(StudentEnrollment.java:276)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #8
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.payTuitionWithDebitCard(StudentEnrollment.java:228)
+	at StudentEnrollment.pay(StudentEnrollment.java:276)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 9
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #9
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 10
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #10
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 11
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #11
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 12
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #12
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 13
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #13
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 14
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.lateEnrollment(StudentEnrollment.java:187)
+	at StudentEnrollment.enroll(StudentEnrollment.java:208)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #14
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.lateEnrollment(StudentEnrollment.java:187)
+	at StudentEnrollment.enroll(StudentEnrollment.java:208)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 15
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #15
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 16
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #16
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 17
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #17
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 18
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #18
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 19
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #19
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 20
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.payTuitionWithCreditCard(StudentEnrollment.java:254)
+	at StudentEnrollment.pay(StudentEnrollment.java:278)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #20
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.payTuitionWithCreditCard(StudentEnrollment.java:254)
+	at StudentEnrollment.pay(StudentEnrollment.java:278)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 21
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #21
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 22
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #22
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 23
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #23
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 24
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #24
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 25
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #25
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 26
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.regularEnrollment(StudentEnrollment.java:164)
+	at StudentEnrollment.enroll(StudentEnrollment.java:210)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #26
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.regularEnrollment(StudentEnrollment.java:164)
+	at StudentEnrollment.enroll(StudentEnrollment.java:210)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 27
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #27
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 28
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #28
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 29
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #29
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 30
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #30
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 31
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #31
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 32
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.payTuitionWithDebitCard(StudentEnrollment.java:228)
+	at StudentEnrollment.pay(StudentEnrollment.java:276)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #32
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.payTuitionWithDebitCard(StudentEnrollment.java:228)
+	at StudentEnrollment.pay(StudentEnrollment.java:276)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 33
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #33
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 34
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #34
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 35
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #35
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 36
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #36
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 37
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #37
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 38
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.regularEnrollment(StudentEnrollment.java:164)
+	at StudentEnrollment.enroll(StudentEnrollment.java:210)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #38
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.regularEnrollment(StudentEnrollment.java:164)
+	at StudentEnrollment.enroll(StudentEnrollment.java:210)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:330)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 39
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #39
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 40
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #40
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 41
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #41
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 42
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #42
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 43
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #43
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setTuitionBalance(StudentEnrollment.java:42)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:323)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 44
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.payTuitionWithCreditCard(StudentEnrollment.java:254)
+	at StudentEnrollment.pay(StudentEnrollment.java:278)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #44
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.payTuitionWithCreditCard(StudentEnrollment.java:254)
+	at StudentEnrollment.pay(StudentEnrollment.java:278)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:333)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 45
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #45
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 46
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #46
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setEnrollmentCredits(StudentEnrollment.java:80)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:325)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 47
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #47
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== error 48
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalArgumentException
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== snapshot #48
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at StudentEnrollment.setPassedCredits(StudentEnrollment.java:62)
+	at StudentEnrollment.enrollmentProcess(StudentEnrollment.java:324)
+	at SymbcDriver.main(SymbcDriver.java:70)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #2: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #3: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #4: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #5: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #6: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #7: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #8: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #9: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #10: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #11: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #12: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #13: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #14: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #15: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #16: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #17: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #18: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #19: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #20: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #21: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #22: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #23: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #24: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #25: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #26: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #27: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #28: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #29: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #30: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #31: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #32: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #33: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #34: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #35: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #36: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #37: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #38: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #39: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #40: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #41: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #42: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #43: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #44: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #45: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #46: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #47: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+error #48: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalArgumentException  at StudentEnro..."
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=119,visited=0,backtracked=119,end=12
+search:             maxDepth=11,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=59
+heap:               new=1319,released=168,maxLive=389,gcCycles=52
+instructions:       6827
+max memory:         240MB
+loaded code:        classes=71,methods=1498
+
+====================================================== search finished: 8/22/21 4:32 PM
+#FOUND ERRORS = 48
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000000#orig:example.txt
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000000#orig:example.txt")
+
+====================================================== search started: 8/22/21 4:32 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000000#orig:example.txt
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 4:32 PM
+[SPF] nothing to process, wait for 60 sec ...
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000001#src:000000#op:havoc#rep:8#+cov#highscore
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000001#src:000000#op:havoc#rep:8#+cov#highscore")
+
+====================================================== search started: 8/22/21 4:33 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000001#src:000000#op:havoc#rep:8#+cov#highscore
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 4:33 PM
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000002#src:000000#op:havoc#rep:64#+cov#highscore
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000002#src:000000#op:havoc#rep:64#+cov#highscore")
+
+====================================================== search started: 8/22/21 4:33 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000002#src:000000#op:havoc#rep:64#+cov#highscore
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 4:33 PM
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000003#src:000000#op:havoc#rep:32#+cov#highscore
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000003#src:000000#op:havoc#rep:32#+cov#highscore")
+
+====================================================== search started: 8/22/21 4:33 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000003#src:000000#op:havoc#rep:32#+cov#highscore
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 4:33 PM
+[SPF] nothing to process, wait for 60 sec ...
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000004#src:000000#op:havoc#rep:64#+cov
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000004#src:000000#op:havoc#rep:64#+cov")
+
+====================================================== search started: 8/22/21 4:34 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000004#src:000000#op:havoc#rep:64#+cov
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 4:34 PM
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000005#src:000002#op:havoc#rep:32#+cov#highscore
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000005#src:000002#op:havoc#rep:32#+cov#highscore")
+
+====================================================== search started: 8/22/21 8:47 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000005#src:000002#op:havoc#rep:32#+cov#highscore
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 8:47 PM
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+Run JPF with argument: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000006#src:000005#op:havoc#rep:2#highscore
+[WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
+Mixed symbolic/concrete execution ...
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000006#src:000005#op:havoc#rep:2#highscore")
+
+====================================================== search started: 8/22/21 8:50 PM
+Error reading input
+java.io.FileNotFoundException: /home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000006#src:000005#op:havoc#rep:2#highscore
+	at java.io.FileInputStream.<init>(FileInputStream.java:36)
+	at SymbcDriver.main(SymbcDriver.java:10)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=1,visited=0,backtracked=1,end=1
+search:             maxDepth=1,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=0
+heap:               new=384,released=19,maxLive=0,gcCycles=1
+instructions:       3371
+max memory:         240MB
+loaded code:        classes=67,methods=1359
+
+====================================================== search finished: 8/22/21 8:50 PM
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...
+[SPF] nothing to process, wait for 60 sec ...

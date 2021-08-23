@@ -1,2 +1,0 @@
-# time, file, cost 
-0,/home/amirfarhad/Desktop/ProgramAnalysis/FIND_FIRST_IN_SORTED/symexe/../fuzzing/in_dir/example.txt,0.0/0.0

@@ -1,0 +1,27 @@
+start_time        : 1629678225
+last_update       : 1629680849
+fuzzer_pid        : 5028
+cycles_done       : 4
+execs_done        : 10601
+execs_per_sec     : 4.44
+paths_total       : 11
+paths_favored     : 3
+paths_found       : 10
+paths_imported    : 0
+max_depth         : 7
+cur_path          : 0
+pending_favs      : 0
+pending_total     : 1
+variable_paths    : 8
+stability         : 88.33%
+bitmap_cvg        : 0.09%
+unique_crashes    : 3
+unique_hangs      : 0
+last_path         : 1629680124
+last_crash        : 1629679873
+last_hang         : 0
+execs_since_crash : 3946
+exec_timeout      : 999999999
+afl_banner        : afl
+afl_version       : 2.52bWCA
+command_line      : /home/amirfarhad/Desktop/ProgramAnalysis/Tools/kelinci-kelinciwca/afl-2.52b/afl-fuzz -i in_dir -o fuzzer-out -c nocost -S afl -t 999999999 /home/amirfarhad/Desktop/ProgramAnalysis/Tools/kelinci-kelinciwca/fuzzerside/interface @@

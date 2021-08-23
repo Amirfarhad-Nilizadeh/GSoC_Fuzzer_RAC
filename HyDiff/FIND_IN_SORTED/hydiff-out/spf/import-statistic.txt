@@ -1,0 +1,18 @@
+# time, file, cost 
+0,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../fuzzing/in_dir/example.txt,null/null
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000000,orig:example.txt,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:16,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:128,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:64,null/null
+181,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000004,src:000000,op:havoc,rep:128,null/null
+181,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000005,src:000000,op:havoc,rep:128,highscore,null/null
+241,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000006,src:000000+000001,op:splice,rep:64,highscore,null/null
+901,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000007,src:000005+000000,op:splice,rep:128,null/null
+1261,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000008,src:000007+000004,op:splice,rep:64,+cov,null/null
+2762,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000009,src:000005,op:havoc,rep:128,highscore,null/null
+2822,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000010,src:000005+000006,op:splice,rep:32,null/null
+3422,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000011,src:000008+000006,op:splice,rep:8,+cov,null/null
+3542,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000012,src:000008+000005,op:splice,rep:128,null/null
+4982,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000013,src:000000+000004,op:splice,rep:64,null/null
+5342,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000014,src:000005+000012,op:splice,rep:16,+cov,null/null
+5402,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/FIND_IN_SORTED/symexe/../hydiff-out/afl/queue/id:000015,src:000005+000012,op:splice,rep:4,highscore,null/null

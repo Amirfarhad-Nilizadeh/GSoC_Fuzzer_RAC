@@ -1,9 +1,5 @@
-     import java.io.File;
-     import java.io.FileInputStream;
-     import java.io.IOException;
-     import java.nio.ByteBuffer;
-     import java.io.FileWriter;
-     import java.io.PrintWriter; 
+     import java.io.*;
+     import java.nio.ByteBuffer; 
 
      public class KelinciDriverMain {
 	 private static String address ="jml";

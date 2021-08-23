@@ -1,9 +1,5 @@
-     import java.io.FileInputStream;
-     import java.io.File;
-     import java.io.IOException;
+     import java.io.*;
      import java.nio.ByteBuffer;
-     import java.io.FileWriter;
-     import java.io.PrintWriter;
      import edu.cmu.sv.kelinci.Kelinci;
      import edu.cmu.sv.kelinci.Mem;
 

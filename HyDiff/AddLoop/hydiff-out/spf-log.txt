@@ -19,7 +19,7 @@ JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All ri
 ====================================================== system under test
 SymbcDriver.main("/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/AddLoop/symexe/../fuzzing/in_dir/example.txt")
 
-====================================================== search started: 8/22/21 2:44 AM
+====================================================== search started: 8/22/21 3:25 AM
 num1=1246579787
 num2=1701603694
 
@@ -36,7 +36,7 @@ instructions:       3676
 max memory:         240MB
 loaded code:        classes=68,methods=1591
 
-====================================================== search finished: 8/22/21 2:44 AM
+====================================================== search finished: 8/22/21 3:25 AM
 [WARNING] unknown classpath element: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/hydiff/tool/symbolicexecution/badger-differential/build/tests
 symbolic.min_int=-2147483648
 symbolic.min_long=-9223372036854775808
@@ -56,6 +56,6 @@ JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All ri
 ====================================================== system under test
 SymbcDriver.main()
 
-====================================================== search started: 8/22/21 2:44 AM
+====================================================== search started: 8/22/21 3:25 AM
 num1=0
 num2=0

@@ -1,5 +1,9 @@
 Time(sec); File; Runtime; Memory; Instr.; User-Defined; Patch-Touch; Patch-Dist.; Output Diff.; Decision Dist.
-7; ../hydiff-out/afl/queue/id:000000,orig:example.txt; 66258021; 251658240; 19; 0; 0; []; 0; 0
-19; ../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:16,+cov; 424403; 251658240; 16; 0; 0; []; 0; 0
-743; ../hydiff-out/afl/queue/id:000002,src:000001,op:havoc,rep:64,+cov,highscore; 127249331; 251658240; 41; 0; 0; []; 0; 0
-800; ../hydiff-out/afl/queue/id:000003,src:000001+000002,op:splice,rep:8,+cov,highscore; 143908826; 251658240; 43; 0; 0; []; 0; 0
+8; ../hydiff-out/afl/queue/id:000000,orig:example.txt; 77181448; 251658240; 19; 0; 0; []; 0; 0
+53; ../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:4,+cov; 482551; 251658240; 16; 0; 0; []; 0; 0
+254; ../hydiff-out/afl/queue/id:000002,src:000000+000001,op:splice,rep:2,+cov,highscore; 179211270; 251658240; 41; 0; 0; []; 0; 0
+580; ../hydiff-out/afl/queue/id:000003,src:000002,op:havoc,rep:4,+cov,highscore; 163031063; 251658240; 49; 0; 0; []; 0; 0
+604; ../hydiff-out/afl/queue/id:000004,src:000002,op:havoc,rep:8,+cov; 150408625; 251658240; 43; 0; 0; []; 0; 0
+714; ../hydiff-out/afl/queue/id:000005,src:000002+000004,op:splice,rep:4,+cov; 150423184; 251658240; 43; 0; 0; []; 0; 0
+1339; ../hydiff-out/afl/queue/id:000006,src:000005+000004,op:splice,rep:4,+cov; 149157600; 251658240; 43; 0; 0; []; 0; 0
+12335; ../hydiff-out/afl/queue/id:000007,src:000006+000003,op:splice,rep:8,+cov; 133694508; 251658240; 43; 0; 0; []; 0; 0

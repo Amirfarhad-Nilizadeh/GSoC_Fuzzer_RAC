@@ -1,0 +1,9 @@
+# time, file, cost 
+1,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../fuzzing/in_dir/example.txt,0.0/0.0
+1,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000000,orig:example.txt,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:8,+cov,highscore,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000002,src:000000,op:havoc,rep:64,+cov,highscore,null/null
+61,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000003,src:000000,op:havoc,rep:32,+cov,highscore,null/null
+121,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000004,src:000000,op:havoc,rep:64,+cov,null/null
+15301,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000005,src:000002,op:havoc,rep:32,+cov,highscore,null/null
+15482,/home/amirfarhad/Desktop/ProgramAnalysis/StudentEnrollment/symexe/../hydiff-out/afl/queue/id:000006,src:000005,op:havoc,rep:2,highscore,null/null

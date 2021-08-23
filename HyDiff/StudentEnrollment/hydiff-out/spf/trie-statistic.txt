@@ -1,0 +1,7 @@
+# time, numberOfNodes, lengthPrioQueue, instructionMapping, sizeSolutionQueue , alreadyReadInputFiles 
+1,118,0,59,0,1
+1,118,0,59,0,2
+61,118,0,59,0,5
+121,118,0,59,0,6
+15301,118,0,59,0,7
+15482,118,0,59,0,8
