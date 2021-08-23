@@ -33,7 +33,7 @@ We used 28 programs from the [Java+JML dataset](https://github.com/Amirfarhad-Ni
 
 In these examples, we provide all necessary inputs (a Java buggy program under test, an entry method with a JML precondition, a fuzzer driver, a JMLDriver, and an initial seed) to cover branches with valid inputs and detect bugs. 
 
-We provide four shell scripts with the name `prepare_examples.sh`, `hydiffServer.sh`, `hydiffAfl.sh`, and `hydiffSpf.sh` to run these examples, which are in the [ShellScripts directory](https://github.com/Amirfarhad-Nilizadeh/JMLKelinci/tree/main/ShellScripts). Before running these shell scripts, you should update the name of the example in the `prepare_examples.sh`.
+We provide four shell scripts with the name `prepare_examples.sh`, `hydiffServer.sh`, `hydiffAfl.sh`, and `hydiffSpf.sh` to run these examples, which are in the [ShellScripts directory](https://github.com/Amirfarhad-Nilizadeh/GSoC_Fuzzer_RAC/tree/main/ShellScripts). Before running these shell scripts, you should update the name of the example in the `prepare_examples.sh`.
 
 For this study, we used OpenJML v.0.8.52, but the examples also work with the (August 2021) last release (v.0.8.55).
 
@@ -41,7 +41,7 @@ For rerunning these examples first run the `prepare_examples.sh` in the HyDiff d
 
 ## Results:
 
-JMLHyDiff could reveal semantic bugs on all 28 programs. You can find results in the HyDiff directory. The generated counterexamples are saved in a text file in the fuzzing directory of each buggy program under the test. Also, the Java+JML+Symbolic directory contains the correct version of Java+JML programs with their provided jpf file for each program. Also, you can find the result of using Kelinci and JML in the JML+Kelinci_Examples directory for detecting bugs.
+JMLHyDiff could reveal semantic bugs on all 28 programs. You can find results in the HyDiff directory. The generated counterexamples are saved in a text file in the fuzzing directory of each buggy program under the test. Also, the [Java+JML+Symbolic](https://github.com/Amirfarhad-Nilizadeh/GSoC_Fuzzer_RAC/tree/main/Java%2BJML%2BSymbolic) directory contains the correct version of Java+JML programs with their provided jpf file for each program. Also, you can find the result of using Kelinci and JML in the [JML+Kelinci_Examples](https://github.com/Amirfarhad-Nilizadeh/GSoC_Fuzzer_RAC/tree/main/JML%2BKelinci_Examples) directory for detecting bugs.
 
 # Architecture
 
