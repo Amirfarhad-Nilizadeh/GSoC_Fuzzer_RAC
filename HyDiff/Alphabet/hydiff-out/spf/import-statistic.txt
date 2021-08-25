@@ -1,2 +1,12 @@
 # time, file, cost 
-0,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../fuzzing/in_dir/example.txt,0.0/0.0
+1,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../fuzzing/in_dir/example.txt,0.0/0.0
+2,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000000,orig:example.txt,null/null
+2,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000001,src:000000,op:havoc,rep:16,+cov,highscore,null/null
+2,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000003,src:000001,op:havoc,rep:4,+cov,null/null
+2,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000002,src:000001,op:havoc,rep:8,+cov,highscore,null/null
+726,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000007,src:000005,op:havoc,rep:4,+cov,null/null
+302,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000007,src:000005,op:havoc,rep:4,+cov,null/null
+786,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000008,src:000005+000004,op:splice,rep:2,+cov,null/null
+362,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000008,src:000005+000004,op:splice,rep:2,+cov,null/null
+1322,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000009,src:000003+000008,op:splice,rep:2,+cov,null/null
+1806,/home/amirfarhad/Desktop/ProgramAnalysis/codes/GSoC_Fuzzer_RAC_GitHub/HyDiff/Alphabet/symexe/../hydiff-out/afl/queue/id:000009,src:000003+000008,op:splice,rep:2,+cov,null/null

@@ -1,1 +1,11 @@
 # time, tmpFile, file, branch, highscore 
+1,../hydiff-out/spf/tmp/0,../hydiff-out/spf/queue/id:000001
+1,../hydiff-out/spf/tmp/1,../hydiff-out/spf/queue/id:000002,+cov
+1,../hydiff-out/spf/tmp/2,../hydiff-out/spf/queue/id:000003,+cov
+1,../hydiff-out/spf/tmp/3,../hydiff-out/spf/queue/id:000004,+cov
+1,../hydiff-out/spf/tmp/4,../hydiff-out/spf/queue/id:000005,+cov
+1,../hydiff-out/spf/tmp/5,../hydiff-out/spf/queue/id:000006
+2,../hydiff-out/spf/tmp/6,../hydiff-out/spf/queue/id:000007
+2,../hydiff-out/spf/tmp/7,../hydiff-out/spf/queue/id:000008
+2,../hydiff-out/spf/tmp/8,../hydiff-out/spf/queue/id:000009
+2,../hydiff-out/spf/tmp/9,../hydiff-out/spf/queue/id:000010

@@ -6,6 +6,7 @@
      public class SymbcDriver {	
      public static void main(String args[]) {
 		int option = 0;
+		int c;
 		char _char = 'i';
 	 	if (args.length == 1) {
            		
@@ -15,8 +16,10 @@
 			if (fis.read(bytes) != -1) 
 				option = Debug.addSymbolicInt(ByteBuffer.wrap(bytes).getInt(), "sym_0");
 
-			if (fis.read(bytes) != -1) 
-				_char = Debug.addSymbolicChar(ByteBuffer.wrap(bytes).getChar(), "sym_1");
+			if (fis.read(bytes) != -1) {
+				c =  ByteBuffer.wrap(bytes).getInt();
+				c = (char) Debug.addSymbolicInteger(c, "sym_1");
+				
 
 		} catch (IOException e) {
            		System.err.println("Error reading input");
